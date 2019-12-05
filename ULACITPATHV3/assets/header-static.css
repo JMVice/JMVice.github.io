@@ -1,0 +1,54 @@
+header {
+    background: #005E8C;
+    color: white;
+}
+
+.container {
+    background: white;
+}
+
+.colorb {
+    background: #edf4ff;
+}
+
+.colorh {
+    background: #005E8C;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nosotros_path_desc{
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.logoimageheader{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+@media(max-width: 991px){
+    
+    /* .telefono_space{
+        margin-top: 5%;
+    } */
+    .asd{
+        margin: 20%;
+    }
+}
+
+@media(max-width: 767px){
+    
+    /* .telefono_space{
+        margin-top: 5%;
+    } */
+    .asd{
+        margin: 0%;
+    }
+}
+

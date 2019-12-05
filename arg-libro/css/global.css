@@ -1,0 +1,15 @@
+/* Adds an space at the top of the page */
+.up_space{padding-top: 6%;}
+
+/* Adds style to the blocks of text */
+#text_box_1{margin-top:15%;margin-left: 20%;margin-right: 20%; }
+#text_box_2{padding-top: 3%; margin-left: 25%;margin-right: 20%;}
+
+p, a {font-size: 150%;}
+
+#footer{text-align: center;padding-top: 3%;}
+
+@media only screen and (max-width: 991px){
+  #imagen_portada{margin-left: 35%; margin-top: 8%; width: 35%; height: 90%;}
+}
+

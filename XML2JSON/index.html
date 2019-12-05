@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XMLtoJSON</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="xml2json.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<script type="text/javascript">
+		$(window).load(function() {
+			var x2js = new X2JS();
+
+			function convertXML2JSon() {
+				$("#jsonArea").val(JSON.stringify(x2js.xml_str2json($("#xmlArea").val())));
+			}
+
+			function convertJSon2XML() {
+				$("#xmlArea").val(x2js.json2xml_str($.parseJSON($("#jsonArea").val())));
+			}
+
+			$("#xmlArea").val("<root><child><textNode>First &amp; Child</textNode></child><child><textNode>Second Child</textNode></child><testAttrs attr1='attr1Value'/></root>");
+			convertXML2JSon();
+			convertJSon2XML();
+
+			$("#convertToJsonBtn").click(convertXML2JSon);
+			$("#convertToXMLBtn").click(convertJSon2XML);
+		});
+	</script>
+</head>
+<body>
+	<h1>X2JS Demo - U</h1>
+	<button id="convertToJsonBtn">XML => JSON</button>
+	<button id="convertToXMLBtn">JSON => XML</button>
+	<div>
+		<h4>XML:</h4>
+		<textarea id="xmlArea" cols="55" rows="15"></textarea>
+	</div>
+
+	<div>
+		<h4>JSON:</h4>
+		<textarea id="jsonArea" cols="55" rows="15"></textarea>
+	</div>
+</body>
+</html>

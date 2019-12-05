@@ -1,0 +1,1 @@
+<p>Éste texto está siendo cargado localmente con ajax (estatico).</p>

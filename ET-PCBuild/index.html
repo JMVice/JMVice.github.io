@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://extremetechcr.com/tienda/pedido-rapido -->
+<html lang="es-es" class="default off-canvas gr__extremetechcr_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Pedido - ExtremeTechCR</title>
+						<meta name="generator" content="PrestaShop">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="http://extremetechcr.com/tienda/img/favicon.ico?1559074656">
+		<link rel="shortcut icon" type="image/x-icon" href="http://extremetechcr.com/tienda/img/favicon.ico?1559074656">
+									<link rel="stylesheet" href="./Pedido - ExtremeTechCR_files/v_42_e9fdc57cecdd6ae981957a948fdc8527_all.css" type="text/css" media="all">
+										<script src="./Pedido - ExtremeTechCR_files/sdk.js.descarga" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./Pedido - ExtremeTechCR_files/ec.js.descarga"></script><script type="text/javascript" charset="utf-8" async="" src="./Pedido - ExtremeTechCR_files/loader.js.descarga"></script><script id="facebook-jssdk" src="./Pedido - ExtremeTechCR_files/sdk.js(1).descarga"></script><script async="" src="./Pedido - ExtremeTechCR_files/analytics.js.descarga"></script><script type="text/javascript">
+var CUSTOMIZE_TEXTFIELD = 1;
+var FancyboxI18nClose = 'Cerrar';
+var FancyboxI18nNext = 'Siguiente';
+var FancyboxI18nPrev = 'Anterior';
+var addressMultishippingUrl = 'http://extremetechcr.com/tienda/direccion?back=order-opc.php%3Fstep%3D1%26multi-shipping%3D1';
+var addressUrl = 'http://extremetechcr.com/tienda/direccion?back=order-opc.php%3Fstep%3D1';
+var addressUrlAdd = 'http://extremetechcr.com/tienda/direccion?back=order-opc.php%3Fstep%3D1&id_address=';
+var addresses = [];
+var ajax_allowed = true;
+var ajaxsearch = true;
+var authenticationUrl = 'http://extremetechcr.com/tienda/inicio-sesion';
+var baseDir = 'http://extremetechcr.com/tienda/';
+var baseUri = 'http://extremetechcr.com/tienda/';
+var blocksearch_type = 'top';
+var checkedCarrier = 214000;
+var conditionEnabled = 1;
+var contentOnly = false;
+var countries = {"73":{"id_country":"73","id_lang":"1","name":"Costa Rica","id_zone":"8","id_currency":"0","iso_code":"CR","call_prefix":"506","active":"1","contains_states":"1","need_identification_number":"0","need_zip_code":"0","zip_code_format":"","display_tax_label":"1","country":"Costa Rica","zone":"Central America\/Antilla","states":[{"id_state":"314","id_country":"73","id_zone":"8","name":"Alajuela","iso_code":"CR-A","tax_behavior":"0","active":"1"},{"id_state":"315","id_country":"73","id_zone":"8","name":"Cartago","iso_code":"CR-C","tax_behavior":"0","active":"1"},{"id_state":"317","id_country":"73","id_zone":"8","name":"Guanacaste","iso_code":"CR-G","tax_behavior":"0","active":"1"},{"id_state":"316","id_country":"73","id_zone":"8","name":"Heredia","iso_code":"CR-H","tax_behavior":"0","active":"1"},{"id_state":"319","id_country":"73","id_zone":"8","name":"Limon","iso_code":"CR-L","tax_behavior":"0","active":"1"},{"id_state":"318","id_country":"73","id_zone":"8","name":"Puntarenas","iso_code":"CR-P","tax_behavior":"0","active":"1"},{"id_state":"313","id_country":"73","id_zone":"8","name":"San Jose","iso_code":"CR-SJ","tax_behavior":"0","active":"1"}]},"203":{"id_country":"203","id_lang":"1","name":"Taiw\u00e1n","id_zone":"3","id_currency":"0","iso_code":"TW","call_prefix":"886","active":"1","contains_states":"0","need_identification_number":"0","need_zip_code":"1","zip_code_format":"NNNNN","display_tax_label":"1","country":"Taiw\u00e1n","zone":"Asia"}};
+var currency = {"id":1,"name":"Col\u00f3n","iso_code":"CRC","iso_code_num":"188","sign":"\u20a1","blank":"1","conversion_rate":"1.000000","deleted":"0","format":"1","decimals":"0","active":"1","prefix":"\u20a1 ","suffix":"","id_shop_list":null,"force_id":false};
+var currencyBlank = 1;
+var currencyFormat = 1;
+var currencyRate = 1;
+var currencySign = '₡';
+var customizationIdMessage = 'Personalización n°';
+var delete_txt = 'Eliminar';
+var deliveryAddress = 0;
+var displayList = false;
+var displayPrice = 1;
+var errorCarrier = 'Usted debe elegir un transportista antes';
+var errorTOS = 'Debes aceptar los términos de servicio antes';
+var freeProductTranslation = '¡Gratis!';
+var freeShippingTranslation = 'Envío gratuito!';
+var generated_date = 1560826384;
+var guestCheckoutEnabled = 1;
+var guestTrackingUrl = 'http://extremetechcr.com/tienda/seguimiento-cliente-no-registrado';
+var hasDeliveryAddress = false;
+var highDPI = false;
+var historyUrl = 'http://extremetechcr.com/tienda/historial-compra';
+var idSelectedCountry = false;
+var idSelectedCountryInvoice = false;
+var idSelectedState = false;
+var idSelectedStateInvoice = false;
+var id_lang = 1;
+var imgDir = 'http://f5e6t5d2.stackpathcdn.com/tienda/themes/leo_computer/img/';
+var img_dir = 'http://f5e6t5d2.stackpathcdn.com/tienda/themes/leo_computer/img/';
+var instantsearch = false;
+var isGuest = 0;
+var isLogged = 0;
+var isMobile = false;
+var isPaymentStep = 0;
+var isVirtualCart = 0;
+var liUpdate = '<a class="button button-small btn-sm btn btn-outline" href="http://extremetechcr.com/tienda/direccion?back=order-opc.php%3Fstep%3D1&id_address=" title="Actualización"><span>Actualización</span></a>';
+var msg_order_carrier = 'Usted debe aceptar los términos del servicio antes de continuar.';
+var opc = true;
+var orderOpcUrl = 'http://extremetechcr.com/tienda/pedido-rapido';
+var orderProcess = 'order-opc';
+var page_name = 'order-opc';
+var priceDisplayMethod = 1;
+var priceDisplayPrecision = 0;
+var quickView = true;
+var removingLinkText = 'eliminar este producto de mi carrito';
+var roundMode = 2;
+var search_url = 'http://extremetechcr.com/tienda/module/leoproductsearch/productsearch';
+var static_token = 'b83b206aca3270aad6a4144df86a81b4';
+var taxEnabled = 1;
+var titleDelivery = '<h3 class="page-subheading">Tu dirección de entrega</h3>';
+var titleInvoice = '<h3 class="page-subheading">Su dirección de facturación</h3>';
+var toBeDetermined = 'A determinar';
+var token = '28112c985c8b471553f285fd33871636';
+var txtConditionsIsNotNeeded = 'No es necesario aceptar las condiciones del servicio para este fin.';
+var txtDeliveryAddress = 'Dirección de entrega';
+var txtErrors = 'Error (s)';
+var txtFree = 'Gratis';
+var txtHasBeenSelected = 'ha sido seleccionado';
+var txtInstantCheckout = 'Pedido instantánea';
+var txtInvoiceAddress = 'Dirección de facturación';
+var txtModifyMyAddress = 'Modificar mi dirección';
+var txtNoCarrierIsNeeded = 'No se necesita soporte para este fin';
+var txtNoCarrierIsSelected = 'Sin transportista ha sido seleccionado';
+var txtProduct = 'producto';
+var txtProducts = 'productos';
+var txtSelectAnAddressFirst = 'Por favor, comienza seleccionando una dirección.';
+var txtTOSIsAccepted = 'Los términos de servicio han sido aceptados';
+var txtTOSIsNotAccepted = 'Los términos de servicio no han sido aceptados';
+var txtThereis = 'Hay';
+var txtWithTax = '(i.v.i)';
+var txtWithoutTax = '(Exc de Imp)';
+var usingSecureMode = false;
+var vat_management = 0;
+</script>
+
+						<script type="text/javascript" src="./Pedido - ExtremeTechCR_files/v_39_e6506cb4d981f03123eabd5afc656d7e.js.descarga"></script>
+													<link rel="stylesheet" type="text/css" href="./Pedido - ExtremeTechCR_files/responsive.css">
+						
+			
+			<script type="text/javascript">
+				(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-140950344-1', 'auto');
+				ga('require', 'ec');</script><meta name="google-site-verification" content="w0JP8XjuEUaYM-9DAoeYFRQdKvKqBdDlNNbarg_DuAg">
+			
+						<link rel="stylesheet" href="./Pedido - ExtremeTechCR_files/test33.css" type="text/css" media="all">
+						
+														                
+				                
+				<link href="./Pedido - ExtremeTechCR_files/css" rel="stylesheet" type="text/css">
+		<!--[if IE 8]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		
+	<style type="text/css">.fancybox-margin{margin-right:19px;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+	<body id="order-opc" class="order-opc hide-left-column hide-right-column lang_es  fullwidth header-default" data-gr-c-s-loaded="true" style=""><div id="chat-application" style="z-index: 10000000; background: transparent; overflow: hidden; display: block; margin: 0px; padding: 0px; border: 0px; transition: none 0s ease 0s; position: fixed; right: 10px; bottom: -4px; width: 230px; height: 45px;"><iframe id="chat-application-iframe" frameborder="no" style="z-index: 10000001; background: transparent; overflow: hidden; position: relative; width: 100%; height: 100%; margin: 0px; border: none; min-width: inherit; max-width: inherit; min-height: inherit; max-height: inherit; transition: none 0s ease 0s;" src="./Pedido - ExtremeTechCR_files/saved_resource.html"></iframe></div>
+					<section id="page" data-column="col-xs-12 col-sm-6 col-md-4" data-type="grid">
+			<!-- Header -->
+			<header id="header" class="header-center">
+				<section class="header-container">
+																															<div id="topbar">
+													<div class="container">
+																<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row ApRow " style="">
+        
+                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12 ApColumn ">
+                <!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+
+<!-- Block user information module NAV  -->
+<div class="header_user_info pull-left clearfix">
+			<div class="header_info hidden-sm hidden-xs hidden-sp pull-left">Bienvenido, usted puede <a href="http://extremetechcr.com/tienda/mi-cuenta">iniciar sesión</a> o <a href="http://extremetechcr.com/tienda/mi-cuenta">crear una cuenta</a></div>
+		<div class="popup-over pull-left e-translate-top pull-left">
+		<div data-toggle="dropdown" class="popup-title"><a href="http://extremetechcr.com/tienda/pedido-rapido#"><span><i class="fa fa-user"></i></span></a></div>	
+		<div class="popup-content">
+			<ul class="links">
+									<li><a class="login" href="http://extremetechcr.com/tienda/mi-cuenta" rel="nofollow" title="Ingrese a su cuenta de cliente">
+						<i class="fa fa-unlock-alt"></i>Iniciar sesión
+					</a></li>
+				
+				<li>
+					<a href="http://extremetechcr.com/tienda/mi-cuenta" title="Mi cuenta"><i class="fa fa-user"></i>Mi Cuenta</a>
+				</li>
+				<li class="last"><a href="http://extremetechcr.com/tienda/" title="Revisa" class="last"><i class="fa fa-share"></i>Revisa</a></li>
+				<li class="first">
+					<a id="wishlist-total" href="http://extremetechcr.com/tienda/module/blockwishlist/mywishlist" title="Mis listas de regalo">
+					<i class="fa fa-heart"></i>Lista de deseos</a><span class="ap-total-wishlist ap-total">0</span>
+				</li>
+				<li>
+					<a href="http://extremetechcr.com/tienda/comparativa-productos" title="Comparar" rel="nofollow">
+						<i class="fa fa-compress"></i>Comparar<span class="ap-total-compare ap-total">0</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>	
+<!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+
+<!-- Block languages module -->
+<div id="leo_block_top" class="pull-left e-translate-top popup-over">
+	<span class="popup-title">
+		<i class="fa fa-cog"></i>
+	</span>
+	<div class="popup-content">
+						<form id="setCurrency" action="http://extremetechcr.com/tienda/pedido-rapido" method="post">
+			<p>
+				<input type="hidden" name="id_currency" id="id_currency" value="">
+				<input type="hidden" name="SubmitCurrency" value="">
+				Moneda
+			</p>
+			<ul id="first-currencies" class="currencies_ul links">
+									<li class="selected">
+						<a href="javascript:setCurrency(1);" title="Colón" rel="nofollow">₡</a>
+					</li>
+							</ul>
+		</form>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#setCurrency").mouseover(function(){
+				$(this).addClass("countries_hover");
+				$(".currencies_ul").addClass("currencies_ul_hover");
+			});
+			$("#setCurrency").mouseout(function(){
+				$(this).removeClass("countries_hover");
+				$(".currencies_ul").removeClass("currencies_ul_hover");
+			});
+		});
+	</script>
+	</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#countries").mouseover(function(){
+		$(this).addClass("countries_hover");
+		$(".countries_ul").addClass("countries_ul_hover");
+	});
+	$("#countries").mouseout(function(){
+		$(this).removeClass("countries_hover");
+		$(".countries_ul").removeClass("countries_ul_hover");
+	});
+});
+</script>
+<!-- /Block languages module -->
+
+<!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+
+<!-- MODULE Block cart -->
+<div class="blockcart_top clearfix pull-right">
+	<div id="cart" class="shopping_cart">
+		<div class="media heading">
+			<div class="cart-inner media-body">
+				<a href="http://extremetechcr.com/tienda/pedido-rapido" title="Ver mi carrito de compra" rel="nofollow">
+					<span class="title-cart"></span>
+					<span class="ajax_cart_total">
+																													₡ 660,000
+																		</span>
+					<span class="ajax_cart_product_empty ajax_cart_no_product unvisible">
+						0 artículo (s) - ₡ 0.00
+					</span>
+					
+					<span class="ajax_cart_quantity">18</span>
+					<span class="ajax_cart_product_txt unvisible"> - artículo</span>
+					<span class="ajax_cart_product_txt_s"> - artículo (s)</span>
+					
+									</a>
+			</div>	
+		</div>
+					<div class="cart_block block exclusive">
+				<div class="block_content">
+					<!-- block list of products -->
+					<div class="cart_block_list">
+													<dl class="products">
+																																			<dt data-id="cart_block_product_1690_1484_0" class="first_item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/1690-amd-ryzen-5-2400g.html" title="AMD Ryzen 5 2400G"><img src="./Pedido - ExtremeTechCR_files/amd-ryzen-5-2400g.jpg" alt="AMD Ryzen 5 2400G"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/1690-amd-ryzen-5-2400g.html#/marca-amd/socket-am4" title="AMD Ryzen 5 2400G">AMD Ryzen...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/1690-amd-ryzen-5-2400g.html#/marca-amd/socket-am4" title="Detalle producto">AMD, AM4</a>
+												</div>
+																						<span class="price">
+																									₡ 94,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1690&amp;ipa=1484&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_1690_1484_0" class="first_item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_2151_1828_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/2151-asrock-a320m-hdv.html" title="Asrock A320M-HDV R4.0"><img src="./Pedido - ExtremeTechCR_files/asrock-a320m-hdv.jpg" alt="Asrock A320M-HDV R4.0"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/2151-asrock-a320m-hdv.html#/formato-micro_atx/socket-am4/chipset-amd_a320/audio-realtek_alc887/red-realtek_gbe_lan/marca-asrock" title="Asrock A320M-HDV R4.0">Asrock...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/2151-asrock-a320m-hdv.html#/formato-micro_atx/socket-am4/chipset-amd_a320/audio-realtek_alc887/red-realtek_gbe_lan/marca-asrock" title="Detalle producto">ASROCK, AM4, AMD A320, Micro ATX, Realtek ALC887, Realtek GbE LAN</a>
+												</div>
+																						<span class="price">
+																									₡ 32,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2151&amp;ipa=1828&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_2151_1828_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_61_62_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/61-gskill-ripjaws-v-8-gb-ddr4-2400-rojo.html" title="G.SKILL Ripjaws V 8 GB DDR4 2400 - Rojo"><img src="./Pedido - ExtremeTechCR_files/gskill-ripjaws-v-8-gb-ddr4-2400-rojo.jpg" alt="G.SKILL Ripjaws V 8 GB DDR4 2400 - Rojo"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/61-gskill-ripjaws-v-8-gb-ddr4-2400-rojo.html#/tipo_de_memoria-ddr4/capacidad-8_gb/marca-gskill/velocidad-ddr4_2400" title="G.SKILL Ripjaws V 8 GB DDR4 2400 - Rojo">G.SKILL...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/61-gskill-ripjaws-v-8-gb-ddr4-2400-rojo.html#/tipo_de_memoria-ddr4/capacidad-8_gb/marca-gskill/velocidad-ddr4_2400" title="Detalle producto">G.SKILL, 8 GB, DDR4, DDR4 2400</a>
+												</div>
+																						<span class="price">
+																									₡ 25,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=61&amp;ipa=62&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_61_62_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_2719_2317_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/2719-sapphire-pulse-radeon-rx-580-8-gb.html" title="Sapphire PULSE Radeon RX 580 8 GB"><img src="./Pedido - ExtremeTechCR_files/sapphire-pulse-radeon-rx-580-8-gb.jpg" alt="Sapphire PULSE Radeon RX 580 8 GB"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/2719-sapphire-pulse-radeon-rx-580-8-gb.html#/vram-8_gb/chip-amd/marca-sapphire/gpu-amd_radeon_rx_580_8_gb" title="Sapphire PULSE Radeon RX 580 8 GB">Sapphire...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/2719-sapphire-pulse-radeon-rx-580-8-gb.html#/vram-8_gb/chip-amd/marca-sapphire/gpu-amd_radeon_rx_580_8_gb" title="Detalle producto">SAPPHIRE, AMD, 8 GB, AMD Radeon RX 580 8 GB</a>
+												</div>
+																						<span class="price">
+																									₡ 125,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2719&amp;ipa=2317&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_2719_2317_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_1491_1316_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/1491-kingston-ssdnow-a400-240-gb.html" title="Kingston SSDNow A400 240 GB"><img src="./Pedido - ExtremeTechCR_files/kingston-ssdnow-a400-240-gb.jpg" alt="Kingston SSDNow A400 240 GB"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/1491-kingston-ssdnow-a400-240-gb.html#/capacidad-240_gb/marca-kingston/interfaz-sata_iii/viernes_negro-almacenamiento" title="Kingston SSDNow A400 240 GB">Kingston...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/1491-kingston-ssdnow-a400-240-gb.html#/capacidad-240_gb/marca-kingston/interfaz-sata_iii/viernes_negro-almacenamiento" title="Detalle producto">KINGSTON, 240 GB, SATA III, Almacenamiento</a>
+												</div>
+																						<span class="price">
+																									₡ 21,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1491&amp;ipa=1316&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_1491_1316_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_2835_2418_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/2835-disco-duro-seagate-1-tb-7200-rpm.html" title="Disco Duro Seagate 1 TB 7200 RPM"><img src="./Pedido - ExtremeTechCR_files/disco-duro-seagate-1-tb-7200-rpm.jpg" alt="Disco Duro Seagate 1 TB 7200 RPM"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/2835-disco-duro-seagate-1-tb-7200-rpm.html#/capacidad-1_tb/formato-35/marca-seagate/viernes_negro-almacenamiento" title="Disco Duro Seagate 1 TB 7200 RPM">Disco Duro...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/2835-disco-duro-seagate-1-tb-7200-rpm.html#/capacidad-1_tb/formato-35/marca-seagate/viernes_negro-almacenamiento" title="Detalle producto">SEAGATE, 1 TB, 3.5", Almacenamiento</a>
+												</div>
+																						<span class="price">
+																									₡ 29,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2835&amp;ipa=2418&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_2835_2418_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_114_118_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/114-EVGA-600W-80-Plus.html" title="EVGA 600W 80 Plus"><img src="./Pedido - ExtremeTechCR_files/EVGA-600W-80-Plus.jpg" alt="EVGA 600W 80 Plus"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/114-EVGA-600W-80-Plus.html#/certificacion-80_plus/modular-no/marca-evga" title="EVGA 600W 80 Plus">EVGA 600W...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/114-EVGA-600W-80-Plus.html#/certificacion-80_plus/modular-no/marca-evga" title="Detalle producto">EVGA, No, 80 Plus</a>
+												</div>
+																						<span class="price">
+																									₡ 30,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=114&amp;ipa=118&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_114_118_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_622_570_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/622-bitfenix-nova-negro.html" title="Bitfenix Nova Negro"><img src="./Pedido - ExtremeTechCR_files/bitfenix-nova-negro.jpg" alt="Bitfenix Nova Negro"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/622-bitfenix-nova-negro.html#/tamano-mid_tower/marca-bitfenix/tipo_de_panel-acrilico" title="Bitfenix Nova Negro">Bitfenix...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/622-bitfenix-nova-negro.html#/tamano-mid_tower/marca-bitfenix/tipo_de_panel-acrilico" title="Detalle producto">BITFENIX, Mid Tower, Acrilico</a>
+												</div>
+																						<span class="price">
+																									₡ 18,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=622&amp;ipa=570&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_622_570_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_2338_1980_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/perifericos/2338-eagle-warrior-wild-beast.html" title="Eagle Warrior Wild Beast"><img src="./Pedido - ExtremeTechCR_files/eagle-warrior-wild-beast.jpg" alt="Eagle Warrior Wild Beast"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/perifericos/2338-eagle-warrior-wild-beast.html#/led-azul_rojo_morado" title="Eagle Warrior Wild Beast">Eagle...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/perifericos/2338-eagle-warrior-wild-beast.html#/led-azul_rojo_morado" title="Detalle producto">Azul-Rojo-Morado</a>
+												</div>
+																						<span class="price">
+																									₡ 12,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2338&amp;ipa=1980&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_2338_1980_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_1182_1041_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/perifericos/1182-thonet-vander-spiel-bluetooth-80w.html" title="Thonet &amp; Vander Spiel  - 80W"><img src="./Pedido - ExtremeTechCR_files/thonet-vander-spiel-bluetooth-80w.jpg" alt="Thonet &amp; Vander Spiel  - 80W"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/perifericos/1182-thonet-vander-spiel-bluetooth-80w.html#/marca-thonet_vander" title="Thonet &amp; Vander Spiel  - 80W">Thonet &amp;...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/perifericos/1182-thonet-vander-spiel-bluetooth-80w.html#/marca-thonet_vander" title="Detalle producto">Thonet &amp; Vander</a>
+												</div>
+																						<span class="price">
+																									₡ 20,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1182&amp;ipa=1041&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_1182_1041_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_2107_1792_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/perifericos/2107-redragon-p012-capricorn.html" title="Redragon P012 Capricorn"><img src="./Pedido - ExtremeTechCR_files/redragon-p012-capricorn.jpg" alt="Redragon P012 Capricorn"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/perifericos/2107-redragon-p012-capricorn.html#/marca-redragon" title="Redragon P012 Capricorn">Redragon...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/perifericos/2107-redragon-p012-capricorn.html#/marca-redragon" title="Detalle producto">REDRAGON</a>
+												</div>
+																						<span class="price">
+																									₡ 3,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2107&amp;ipa=1792&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_2107_1792_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_1871_1605_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/1871-aoc-e2280swn.html" title="AOC E2270SWN"><img src="./Pedido - ExtremeTechCR_files/aoc-e2280swn.jpg" alt="AOC E2270SWN"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/1871-aoc-e2280swn.html#/tiempo_de_respuesta-5ms/frecuencia_vertical-60_hz/tipo_de_panel-tn/resolucion-1920x1080/marca-aoc/tamano-22_pulgadas" title="AOC E2270SWN">AOC E2270SWN</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/1871-aoc-e2280swn.html#/tiempo_de_respuesta-5ms/frecuencia_vertical-60_hz/tipo_de_panel-tn/resolucion-1920x1080/marca-aoc/tamano-22_pulgadas" title="Detalle producto">AOC, 22 pulgadas, 1920x1080, TN, 60 Hz, 5ms</a>
+												</div>
+																						<span class="price">
+																									₡ 61,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1871&amp;ipa=1605&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_1871_1605_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_474_439_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/componentes/474-ups-cdp-1000va.html" title="UPS CDP 1000VA"><img src="./Pedido - ExtremeTechCR_files/ups-cdp-1000va.jpg" alt="UPS CDP 1000VA"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/componentes/474-ups-cdp-1000va.html#/marca-cdp" title="UPS CDP 1000VA">UPS CDP...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/componentes/474-ups-cdp-1000va.html#/marca-cdp" title="Detalle producto">CDP</a>
+												</div>
+																						<span class="price">
+																									₡ 28,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=474&amp;ipa=439&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_474_439_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_1059_937_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/perifericos/1059-msi-ds501.html" title="MSI DS501"><img src="./Pedido - ExtremeTechCR_files/msi-ds501.jpg" alt="MSI DS501"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/perifericos/1059-msi-ds501.html#/marca-msi/audio-stereo/conexion-35mm" title="MSI DS501">MSI DS501</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/perifericos/1059-msi-ds501.html#/marca-msi/audio-stereo/conexion-35mm" title="Detalle producto">MSI, Stereo, 3.5mm</a>
+												</div>
+																						<span class="price">
+																									₡ 10,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1059&amp;ipa=937&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_1059_937_0" class="item">
+																		<!-- Customizable datas -->
+																		</dd>																																			<dt data-id="cart_block_product_1672_0_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/inicio/1672-logitech-c922.html" title="Logitech C922"><img src="./Pedido - ExtremeTechCR_files/logitech-c922.jpg" alt="Logitech C922"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/inicio/1672-logitech-c922.html" title="Logitech C922">Logitech C922</a>
+											</div>
+																						<span class="price">
+																									₡ 50,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1672&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																		<!-- Customizable datas -->
+																																																					<dt data-id="cart_block_product_1867_0_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/perifericos/1867-control-xbox-one-s-negro-adaptador-bt40.html" title="Control Xbox One S - Negro + Adaptador BT 4.0"><img src="./Pedido - ExtremeTechCR_files/control-xbox-one-s-negro-adaptador-bt40.jpg" alt="Control Xbox One S - Negro + Adaptador BT 4.0"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/perifericos/1867-control-xbox-one-s-negro-adaptador-bt40.html" title="Control Xbox One S - Negro + Adaptador BT 4.0">Control...</a>
+											</div>
+																						<span class="price">
+																									₡ 42,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1867&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																		<!-- Customizable datas -->
+																																																					<dt data-id="cart_block_product_2033_0_0" class="item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/pasta-termica/2033-thermal-grizzly-kryonaut-1g.html" title="Thermal Grizzly Kryonaut - 1g"><img src="./Pedido - ExtremeTechCR_files/thermal-grizzly-kryonaut-1g.jpg" alt="Thermal Grizzly Kryonaut - 1g"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/pasta-termica/2033-thermal-grizzly-kryonaut-1g.html" title="Thermal Grizzly Kryonaut - 1g">Thermal...</a>
+											</div>
+																						<span class="price">
+																									₡ 5,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2033&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																		<!-- Customizable datas -->
+																																																					<dt data-id="cart_block_product_1970_1804_0" class="last_item">
+										<a class="cart-images" href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html" title="Huion Inspiroy H950P"><img src="./Pedido - ExtremeTechCR_files/huion-inspiroy-h950p.jpg" alt="Huion Inspiroy H950P"></a>
+										<div class="cart-info">
+											<div class="product-name">
+												<span class="quantity-formated"><span class="quantity">1</span>&nbsp;x&nbsp;</span><a class="cart_block_product_name" href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/marca-huion" title="Huion Inspiroy H950P">Huion...</a>
+											</div>
+																							<div class="product-atributes">
+													<a href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/marca-huion" title="Detalle producto">HUION</a>
+												</div>
+																						<span class="price">
+																									₡ 55,000                                                    <div class="hookDisplayProductPriceBlock-price">
+                                                        
+                                                    </div>
+																							</span>
+										</div>
+										<span class="remove_link">
+																							<a class="ajax_cart_block_remove_link" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1970&amp;ipa=1804&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" rel="nofollow" title="eliminar este producto de mi carrito"><i class="fa fa-trash-o"></i></a>
+																					</span>
+									</dt>
+																			<dd data-id="cart_block_combination_of_1970_1804_0" class="last_item">
+																		<!-- Customizable datas -->
+																		</dd>															</dl>
+												<p class="cart_block_no_products unvisible">
+							Ningún producto
+						</p>
+																		<div class="cart-prices">
+							<div class="cart-prices-line first-line">
+								<span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
+																			₡ 5,000
+																	</span>
+								<span>
+									Transporte
+								</span>
+							</div>
+																					<div class="cart-prices-line last-line">
+								<span class="price cart_block_total ajax_block_cart_total">₡ 665,000</span>
+								<span>Total</span>
+							</div>
+													</div>
+						<p class="cart-buttons clearfix">
+							<a id="button_order_cart" class="btn btn-warning button-medium button button-small pull-right" href="http://extremetechcr.com/tienda/pedido-rapido" title="Confirmar" rel="nofollow">
+								<span>
+									Confirmar
+								</span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div><!-- .cart_block -->
+			</div>
+</div>
+
+	<div id="layer_cart">
+		<div class="clearfix">
+			<div class="layer_cart_product col-xs-12 col-md-6">
+				<span class="cross" title="Cerrar Ventana"></span>
+				<span class="title">
+					<i class="fa fa-ok"></i>Producto añadido correctamente a su carrito de la compra
+				</span>
+				<div class="product-image-container layer_cart_img">
+				</div>
+				<div class="layer_cart_product_info">
+					<span id="layer_cart_product_title" class="product-name"></span>
+					<span id="layer_cart_product_attributes"></span>
+					<div>
+						<strong class="dark">Cantidad</strong>
+						<span id="layer_cart_product_quantity"></span>
+					</div>
+					<div>
+						<strong class="dark">Total</strong>
+						<span id="layer_cart_product_price"></span>
+					</div>
+				</div>
+			</div>
+			<div class="layer_cart_cart col-xs-12 col-md-6">
+				<span class="title">
+					<!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
+					<span class="ajax_cart_product_txt_s ">
+						Hay <span class="ajax_cart_quantity">18</span> artículos en su carrito.
+					</span>
+					<!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
+					<span class="ajax_cart_product_txt  unvisible">
+						Hay 1 artículo en su carrito
+					</span>
+				</span>
+				<div class="layer_cart_row">
+					<strong class="dark">
+						Total productos:
+											</strong>
+					<span class="ajax_block_products_total">
+													₡ 660,000
+											</span>
+				</div>
+
+								<div class="layer_cart_row">
+					<strong class="dark">
+						Total envío:&nbsp;					</strong>
+					<span class="ajax_cart_shipping_cost">
+													₡ 5,000
+											</span>
+				</div>
+								<div class="layer_cart_row">
+					<strong class="dark">
+						Total
+																					(sin IVA)
+																		</strong>
+					<span class="ajax_block_cart_total">
+																					₡ 665,000
+																		</span>
+				</div>
+				<div class="button-container">	
+					<span class="continue btn btn-outline btn-sm button exclusive-medium" title="Continuar la compra">
+						<span>
+							Continuar la compra
+						</span>
+					</span>
+					<a class="btn btn-outline btn-sm button pull-right" href="http://extremetechcr.com/tienda/pedido-rapido" title="Ir a la caja" rel="nofollow">
+						<span>
+							Ir a la caja
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="crossseling"></div>
+	</div> <!-- #layer_cart -->
+	<div class="layer_cart_overlay"></div>
+
+<!-- /MODULE Block cart -->
+
+
+    </div>
+            </div>
+
+													</div>
+											</div>
+										<div id="header-main" class="header-left">
+													<div class="container">
+													<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+    <div class="row ApRow " style="">
+        
+                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-sp-12 ApColumn ">
+                <!-- @file modules\appagebuilder\views\templates\hook\ApGenCode -->
+
+	                                    <a href="http://extremetechcr.com/tienda/" title="ExtremeTechCR">                                        <img class="logo img-responsive" src="./Pedido - ExtremeTechCR_files/extremetechcr-logo-1464805590.jpg" alt="ExtremeTechCR" width="428" height="146">                                    </a>
+
+
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-sp-12 ApColumn ">
+                <!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+
+<div id="leo-megamenu" class="clearfix">
+<nav id="cavas_menu" class="sf-contener leo-megamenu">
+    <div role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle btn-outline-inverse" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Navegación Toggle</span>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="leo-top-menu" class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav megamenu"><li class="parent dropdown  "><a class="dropdown-toggle has-category" data-toggle="dropdown" href="http://extremetechcr.com/tienda/36-computadoras" target="_self"><span class="menu-title">Computadoras</span><b class="caret"></b></a><div class="dropdown-menu level1"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/37-gaming"><span class="menu-title">Gaming</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/92-combos-kits"><span class="menu-title">Combos / Kits</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/38-hogar-y-oficina"><span class="menu-title">Hogar y Oficina</span></a></li><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/39-laptop"><span class="menu-title">Laptop</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/155-accesorios"><span class="menu-title">Accesorios</span></a></li></ul></div></div></div></div></div></li><li class="  "><a href="http://extremetechcr.com/tienda/160-punto-de-venta"><span class="menu-title">Punto de Venta</span></a></li></ul></div></div></div></div></div></li><li class="parent dropdown  "><a class="dropdown-toggle has-category" data-toggle="dropdown" href="http://extremetechcr.com/tienda/12-componentes" target="_self"><span class="menu-title">Componentes</span><b class="caret"></b></a><div class="dropdown-menu level1"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/13-procesadores"><span class="menu-title">Procesadores</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/14-procesadores-amd"><span class="menu-title">Procesadores AMD</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/15-procesadores-intel"><span class="menu-title">Procesadores Intel</span></a></li></ul></div></div></div></div></div></li><li class="  "><a href="http://extremetechcr.com/tienda/16-tarjeta-madre"><span class="menu-title">Tarjeta Madre</span></a></li><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/17-memoria-ram"><span class="menu-title">Memoria RAM</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/112-memoria-laptop"><span class="menu-title">Memoria Laptop</span></a></li></ul></div></div></div></div></div></li><li class="  "><a href="http://extremetechcr.com/tienda/18-tarjetas-de-video"><span class="menu-title">Tarjetas de Video</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/161-tarjetas-de-sonido"><span class="menu-title">Tarjetas de Sonido</span></a></li><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/19-almacenamiento"><span class="menu-title">Almacenamiento</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/20-disco-duro"><span class="menu-title">Disco Duro</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/21-ssd"><span class="menu-title">SSD</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/41-disco-externo"><span class="menu-title">Disco Externo</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/22-memoria-flash"><span class="menu-title">Memoria Flash</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/113-unidades-dvd"><span class="menu-title">Unidades DVD</span></a></li></ul></div></div></div></div></div></li><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/23-enfriamiento"><span class="menu-title">Enfriamiento</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/89-enfriamiento-liquido"><span class="menu-title">Enfriamiento Liquido</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/90-enfriamiento-aire"><span class="menu-title">Enfriamiento Aire</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/91-personalizado"><span class="menu-title">Personalizado</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/101-laptops"><span class="menu-title">Enfriamiento Laptops</span></a></li></ul></div></div></div></div></div></li><li class="  "><a href="http://extremetechcr.com/tienda/24-fuentes-de-poder"><span class="menu-title">Fuentes de Poder</span></a></li><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/25-cases"><span class="menu-title">Cases</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/117-accesorios-case"><span class="menu-title">Accesorios</span></a></li></ul></div></div></div></div></div></li><li class="  "><a href="http://extremetechcr.com/tienda/26-ventiladores"><span class="menu-title">Ventiladores</span></a></li><li class="parent dropdown-submenu  "><a class="dropdown-toggle" data-toggle="dropdown" href="http://extremetechcr.com/tienda/27-monitores"><span class="menu-title">Monitores</span><b class="caret"></b></a><div class="dropdown-menu level2"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/157-accesorios"><span class="menu-title">Accesorios</span></a></li></ul></div></div></div></div></div></li><li class="  "><a href="http://extremetechcr.com/tienda/28-reguladores-y-ups"><span class="menu-title">Reguladores y UPS</span></a></li></ul></div></div></div></div></div></li><li class="parent dropdown  "><a class="dropdown-toggle has-category" data-toggle="dropdown" href="http://extremetechcr.com/tienda/29-perifericos" target="_self"><span class="menu-title">Perifericos</span><b class="caret"></b></a><div class="dropdown-menu level1"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/30-teclados"><span class="menu-title">Teclados</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/31-mouse"><span class="menu-title">Mouse</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/32-combo-teclado-y-mouse"><span class="menu-title">Combo Teclado y Mouse</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/33-headset"><span class="menu-title">Headset</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/34-mousepad"><span class="menu-title">Mousepad</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/76-controles"><span class="menu-title">Controles</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/86-parlantes"><span class="menu-title">Parlantes</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/140-webcam"><span class="menu-title">Webcam</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/145-audio"><span class="menu-title">Microfonos</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/147-tablet-dibujo"><span class="menu-title">Tablets Dibujo</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/159-impresoras"><span class="menu-title">Impresoras</span></a></li></ul></div></div></div></div></div></li><li class="parent dropdown  "><a class="dropdown-toggle has-category" data-toggle="dropdown" href="http://extremetechcr.com/tienda/77-accesorios" target="_self"><span class="menu-title">Accesorios</span><b class="caret"></b></a><div class="dropdown-menu level1"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/78-adaptadores"><span class="menu-title">Adaptadores</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/79-cables"><span class="menu-title">Cables</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/85-encapsuladores"><span class="menu-title">Encapsuladores</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/80-extensiones"><span class="menu-title">Extensiones</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/144-herramientas"><span class="menu-title">Herramientas</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/81-led"><span class="menu-title">LED</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/82-control-de-ventiladores"><span class="menu-title">Control de Ventiladores</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/83-pasta-termica"><span class="menu-title">Pasta Térmica</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/84-redes"><span class="menu-title">Redes</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/87-sillas-gamer"><span class="menu-title">Sillas Gamer</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/138-realidad-virtual"><span class="menu-title">Realidad Virtual</span></a></li></ul></div></div></div></div></div></li><li class="parent dropdown  "><a class="dropdown-toggle has-category" data-toggle="dropdown" href="http://extremetechcr.com/tienda/35-celulares" target="_self"><span class="menu-title">Celulares</span><b class="caret"></b></a><div class="dropdown-menu level1"><div class="dropdown-menu-inner"><div class="row"><div class="col-sm-12 mega-col" data-colwidth="12" data-type="menu"><div class="inner"><ul><li class="  "><a href="http://extremetechcr.com/tienda/108-one-plus"><span class="menu-title">One Plus</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/109-xiaomi"><span class="menu-title">Xiaomi</span></a></li><li class="  "><a href="http://extremetechcr.com/tienda/110-accesorios"><span class="menu-title">Accesorios</span></a></li></ul></div></div></div></div></div></li><li class="">
+						<a href="http://extremetechcr.com/tienda/158-audio" target="_self" class="has-category"><span class="menu-title">Audio</span></a></li><li class="">
+						<a href="http://extremetechcr.com/tienda/module/powerfulformgenerator/display?id=1" target="_self" class="has-category"><span class="menu-title">Financiamiento</span></a></li></ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+	var current_link = "http://extremetechcr.com/tienda/";
+	//alert(request);
+    var currentURL = window.location;
+    currentURL = String(currentURL);
+    currentURL = currentURL.replace("https://","").replace("http://","").replace("www.","").replace( /#\w*/, "" );
+    current_link = current_link.replace("https://","").replace("http://","").replace("www.","");
+    isHomeMenu = 0;
+    if($("body").attr("id")=="index") isHomeMenu = 1;
+    $(".megamenu > li > a").each(function() {
+        menuURL = $(this).attr("href").replace("https://","").replace("http://","").replace("www.","").replace( /#\w*/, "" );
+		if( (currentURL == menuURL) || (currentURL.replace(current_link,"") == menuURL) || isHomeMenu){
+			$(this).parent().addClass("active");
+            return false;
+		}
+    });
+// ]]>
+</script>
+<script type="text/javascript">
+    (function($) {
+        $.fn.OffCavasmenu = function(opts) {
+            // default configuration
+            var config = $.extend({}, {
+                opt1: null,
+                text_warning_select: "Por favor seleccione uno de quitar?",
+                text_confirm_remove: "¿Seguro de eliminar la fila de pie de página?",
+                JSON: null
+            }, opts);
+            // main function
+            // initialize every element
+            this.each(function() {
+                var $btn = $('#cavas_menu .navbar-toggle');
+                var $nav = null;
+                if (!$btn.length)
+                    return;
+                var $nav = $('<section id="off-canvas-nav" class="leo-megamenu"><nav class="offcanvas-mainnav"><div id="off-canvas-button"><span class="off-canvas-nav"></span>Cerrar</div></nav></section>');
+                var $menucontent = $($btn.data('target')).find('.megamenu').clone();
+                $("body").append($nav);
+                $("#off-canvas-nav .offcanvas-mainnav").append($menucontent);
+                $("#off-canvas-nav .offcanvas-mainnav").css('min-height',$(window).height()+30+"px");
+                $("html").addClass ("off-canvas");
+                $("#off-canvas-button").click( function(){
+                        $btn.click();	
+                } );
+                $btn.toggle(function() {
+                    $("body").removeClass("off-canvas-inactive").addClass("off-canvas-active");
+                }, function() {
+                    $("body").removeClass("off-canvas-active").addClass("off-canvas-inactive");
+                });
+            });
+            return this;
+        }
+    })(jQuery);
+    $(document).ready(function() {
+        jQuery("#cavas_menu").OffCavasmenu();
+        $('#cavas_menu .navbar-toggle').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 0);
+            return false;
+        });
+    });
+    $(document.body).on('click', '[data-toggle="dropdown"]' ,function(){
+        if(!$(this).parent().hasClass('open') && this.href && this.href != '#'){
+            window.location.href = this.href;
+        }
+    });
+</script>
+
+
+    </div>
+            </div>
+													</div>
+											</div>
+				</section>
+			</header>
+											<div id="slideshow" class="clearfix">
+									<div class="container">
+									<!-- @file modules\appagebuilder\views\templates\hook\ApRow -->
+<div class="wrapper">
+	 <div class="home_top">
+    <div class="clearfix ApRow has-bg bg-boxed" data-bg=" no-repeat" style="background: no-repeat;">
+        
+                            <!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="nopadding col-lg-3 col-md-3 col-sm-4-8 col-xs-12 col-sp-12 ApColumn ">
+                <!-- @file modules\appagebuilder\views\templates\hook\ApGeneral -->
+<div class="ApHtml block">
+	
+    	<div class="block_content">
+					<div class="alert-support"><p>Centro de atención</p><h3><em class="fa fa-phone"></em> 4001-4991 | 4000-2224</h3><p><em class="fa fa-envelope-o"></em>ventas@extremetechcr.com</p></div>
+			</div>
+	
+</div>
+    </div><!-- @file modules\appagebuilder\views\templates\hook\ApColumn -->
+<div class="nopadding col-lg-9 col-md-9 col-sm-7-2 col-xs-12 col-sp-12 ApColumn ">
+                <!-- @file modules\appagebuilder\views\templates\hook\ApModule -->
+
+
+<!-- Block search module -->
+<div id="leo_search_block_top" class="block exclusive">
+	<h4 class="title_block">Buscar en todos los productos</h4>
+	<form method="get" action="http://extremetechcr.com/tienda/index.php?controller=productsearch" id="leosearchtopbox">
+		<input type="hidden" name="fc" value="module">
+		<input type="hidden" name="module" value="leoproductsearch">
+		<input type="hidden" name="controller" value="productsearch">
+		<input type="hidden" name="orderby" value="position">
+		<input type="hidden" name="orderway" value="desc">
+    	
+		<p class="block_content clearfix">
+			<select class="form-control form-select" name="cate" id="cate">
+				<option value="">Todas Las Categorías</option>
+			     			     <option value="2">Inicio</option>
+			     			     <option value="12">COMPONENTES</option>
+			     			     <option value="29">PERIFERICOS</option>
+			     			     <option value="35">CELULARES</option>
+			     			     <option value="77">ACCESORIOS</option>
+			     			     <option value="36">COMPUTADORAS</option>
+			     			     <option value="42">MARCAS</option>
+			     			     <option value="88">LOGITECH</option>
+			     			     <option value="93">RAZER</option>
+			     			     <option value="94">Cougar</option>
+			     			     <option value="95">Azio</option>
+			     			     <option value="97">Corsair</option>
+			     			     <option value="98">ONEPLUS</option>
+			     			     <option value="99">Redragon</option>
+			     			     <option value="100">Marvo</option>
+			     			     <option value="102">Cougar</option>
+			     			     <option value="103">Thonet &amp; Vander</option>
+			     			     <option value="104">Sennheiser</option>
+			     			     <option value="105">HYPERX</option>
+			     			     <option value="106">Havit</option>
+			     			     <option value="111">Ryzen</option>
+			     			     <option value="112">MEMORIA LAPTOP</option>
+			     			     <option value="114">Noblechairs</option>
+			     			     <option value="115">NZXT</option>
+			     			     <option value="117">ACCESORIOS CASE</option>
+			     			     <option value="118">Intel Octava Generacion</option>
+			     			     <option value="119">InWin</option>
+			     			     <option value="139">AUDIO-TECHNICA</option>
+			     			     <option value="141">Adata</option>
+			     			     <option value="142">Audio Technica</option>
+			     			     <option value="143">GSKILL</option>
+			     			     <option value="145">Microfonos</option>
+			     			     <option value="146">Ryzen2</option>
+			     			     <option value="148">Bitfenix</option>
+			     			     <option value="149">Azza</option>
+			     			     <option value="150">Phanteks</option>
+			     			     <option value="151">Fractal Design</option>
+			     			     <option value="152">Adata</option>
+			     			     <option value="153">MSI Octava Generacion</option>
+			     			     <option value="154">MSI Optix</option>
+			     			     <option value="155">ACCESORIOS</option>
+			     			     <option value="156">Seasonic</option>
+			     			     <option value="158">Audio</option>
+			     			     <option value="162">Asrock</option>
+			     			     <option value="163">BEQUIET</option>
+			     			     <option value="164">XBOX</option>
+			     			     <option value="165">Steelseries</option>
+			     			     <option value="166">PromoIntel</option>
+			     			     <option value="168">Novedades</option>
+			     			     <option value="169">ASUS ROG</option>
+			     			     <option value="170">Ofertas Verano</option>
+			     			     <option value="171">demo0120</option>
+			     			     <option value="172">EXT00024</option>
+			     			     <option value="173">iPods</option>
+			     			     <option value="175">MSI Novena Generacion</option>
+			     			     <option value="177">Radeon RX590</option>
+			     			     <option value="178">Cooler Master</option>
+			     			     <option value="179">DXRACER</option>
+			     			     <option value="180">VERTAGEAR</option>
+			     			     <option value="13">PROCESADORES</option>
+			     			     <option value="30">TECLADOS</option>
+			     			     <option value="37">GAMING</option>
+			     			     <option value="43">AMD</option>
+			     			     <option value="78">Adaptadores</option>
+			     			     <option value="107">MOTOROLA</option>
+			     			     <option value="122">Laptops</option>
+			     			     <option value="16">TARJETA MADRE</option>
+			     			     <option value="31">MOUSE</option>
+			     			     <option value="38">HOGAR Y OFICINA</option>
+			     			     <option value="44">INTEL</option>
+			     			     <option value="79">Cables</option>
+			     			     <option value="108">ONE PLUS</option>
+			     			     <option value="123">Tarjetas Madre</option>
+			     			     <option value="17">MEMORIA RAM</option>
+			     			     <option value="32">COMBO TECLADO Y MOUSE</option>
+			     			     <option value="39">LAPTOP</option>
+			     			     <option value="45">GIGABYTE</option>
+			     			     <option value="85">Encapsuladores</option>
+			     			     <option value="109">XIAOMI</option>
+			     			     <option value="124">Tarjetas de Video</option>
+			     			     <option value="18">TARJETAS DE VIDEO</option>
+			     			     <option value="33">HEADSET</option>
+			     			     <option value="40">MINI PC</option>
+			     			     <option value="46">MSI</option>
+			     			     <option value="80">Extensiones</option>
+			     			     <option value="110">ACCESORIOS</option>
+			     			     <option value="125">Monitores</option>
+			     			     <option value="34">MOUSEPAD</option>
+			     			     <option value="47">ASUS</option>
+			     			     <option value="81">LED</option>
+			     			     <option value="92">COMBOS / KITS</option>
+			     			     <option value="126">Cases</option>
+			     			     <option value="161">TARJETAS DE SONIDO</option>
+			     			     <option value="19">ALMACENAMIENTO</option>
+			     			     <option value="48">HYPERX</option>
+			     			     <option value="76">CONTROLES</option>
+			     			     <option value="82">Control de Ventiladores</option>
+			     			     <option value="127">Procesadores</option>
+			     			     <option value="23">ENFRIAMIENTO</option>
+			     			     <option value="49">G.SKILL</option>
+			     			     <option value="83">Pasta Térmica</option>
+			     			     <option value="86">PARLANTES</option>
+			     			     <option value="128">Almacenamiento</option>
+			     			     <option value="160">PUNTO DE VENTA</option>
+			     			     <option value="24">FUENTES DE PODER</option>
+			     			     <option value="50">CORSAIR</option>
+			     			     <option value="84">Redes</option>
+			     			     <option value="129">Fuentes de Poder</option>
+			     			     <option value="147">Tablet Dibujo</option>
+			     			     <option value="25">CASES</option>
+			     			     <option value="51">ZOTAC</option>
+			     			     <option value="87">Sillas Gamer</option>
+			     			     <option value="130">Enfriamiento</option>
+			     			     <option value="159">IMPRESORAS</option>
+			     			     <option value="26">VENTILADORES</option>
+			     			     <option value="52">EVGA</option>
+			     			     <option value="131">Ventiladores</option>
+			     			     <option value="138">Realidad Virtual</option>
+			     			     <option value="27">MONITORES</option>
+			     			     <option value="53">TOSHIBA</option>
+			     			     <option value="132">Sillas Gamer</option>
+			     			     <option value="140">Webcam</option>
+			     			     <option value="28">REGULADORES Y UPS</option>
+			     			     <option value="54">KINGSTON</option>
+			     			     <option value="133">Parlantes</option>
+			     			     <option value="144">Herramientas</option>
+			     			     <option value="55">SAMSUNG</option>
+			     			     <option value="134">Celulares</option>
+			     			     <option value="157">ACCESORIOS</option>
+			     			     <option value="56">COOLER MASTER</option>
+			     			     <option value="135">Perifericos</option>
+			     			     <option value="57">PHANTEKS</option>
+			     			     <option value="58">EKWB</option>
+			     			     <option value="59">SEASONIC</option>
+			     			     <option value="60">NZXT</option>
+			     			     <option value="61">RIOTORO</option>
+			     			     <option value="62">FRACTAL DESING</option>
+			     			     <option value="63">THERMALTAKE</option>
+			     			     <option value="64">AOC</option>
+			     			     <option value="65">BENQ</option>
+			     			     <option value="66">APOLLO</option>
+			     			     <option value="67">CENTRA</option>
+			     			     <option value="68">LOGITECH</option>
+			     			     <option value="69">MOTOROLA</option>
+			     			     <option value="70">ONEPLUS</option>
+			     			     <option value="71">GOOGLE</option>
+			     			     <option value="72">RAZER</option>
+			     			     <option value="121">SANDISK</option>
+			     			     <option value="137">TEAMGROUP</option>
+			     			     <option value="174">CRUCIAL</option>
+			     			     <option value="176">MASTERFAN</option>
+			     			     <option value="14">PROCESADORES AMD</option>
+			     			     <option value="20">DISCO DURO</option>
+			     			     <option value="89">ENFRIAMIENTO LIQUIDO</option>
+			     			     <option value="15">PROCESADORES INTEL</option>
+			     			     <option value="21">SSD</option>
+			     			     <option value="90">ENFRIAMIENTO AIRE</option>
+			     			     <option value="22">MEMORIA FLASH</option>
+			     			     <option value="91">PERSONALIZADO</option>
+			     			     <option value="41">DISCO EXTERNO</option>
+			     			     <option value="101">ENFRIAMIENTO LAPTOPS</option>
+			     			     <option value="113">UNIDADES DVD</option>
+			                 </select>
+			<input class="search_query form-control grey ac_input" type="text" id="leo_search_query_top" name="search_query" value="" autocomplete="off">
+			<button type="submit" id="leo_search_top_button" class="btn btn-default button button-small"><span><i class="fa fa-search"></i></span></button> 
+		</p>
+	</form>
+</div>
+<!-- /Block search module -->
+
+
+    </div>
+            </div>
+</div>
+</div>
+
+									</div>
+								
+			</div>
+											<div id="breadcrumb" class="clearfix">
+					<div class="container">		
+						
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="http://extremetechcr.com/tienda/" title="Vuelve a casa">Inicio</a>
+			<span class="navigation-pipe">&gt;</span>
+					Tu carrito de la compra
+			</div>
+<!-- /Breadcrumb -->
+	
+					</div>
+				</div>
+						<!-- Content -->
+			<section id="columns" class="columns-container">
+									<div class="container">
+					<div class="row">
+				                               
+                        												<!-- Center -->
+						<section id="center_column" class="col-md-12">
+	
+		
+			<!-- Shopping Cart -->
+
+		
+
+<h1 id="cart_title" class="page-heading">Resumen del Carrito de Compras</h1>
+			<small class="heading-counter">Su carrito contiene:
+			<span id="summary_products_quantity">18 productos</span>
+		</small>
+	
+
+
+
+
+	
+
+
+
+
+	<p id="emptyCartWarning" class="alert alert-warning unvisible">Su carrito está vacío.</p>
+			<div class="cart_last_product">
+			<div class="cart_last_product_header">
+				<div class="left">Último producto añadido</div>
+			</div>
+			<a class="cart_last_product_img" href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html">
+				<img src="./Pedido - ExtremeTechCR_files/huion-inspiroy-h950p(1).jpg" alt="Huion Inspiroy H950P">
+			</a>
+			<div class="cart_last_product_content">
+				<p class="product-name">
+					<a href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/marca-huion">
+						Huion Inspiroy H950P
+					</a>
+				</p>
+									<small>
+						<a href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/marca-huion">
+							Marca : HUION
+						</a>
+					</small>
+							</div>
+		</div>
+					
+	
+	<div id="order-detail-content" class="table_block table-responsive">
+		<table id="cart_summary" class="table table-bordered stock-management-on">
+			<thead>
+				<tr>
+					<th class="cart_product first_item">Producto</th>
+					<th class="cart_description item">Descripción</th>
+																	<th class="cart_avail item text-center">Disponibilidad</th>
+										<th class="cart_unit item text-right">Precio unitario</th>
+					<th class="cart_quantity item text-center">Cantidad</th>
+					<th class="cart_delete last_item">&nbsp;</th>
+					<th class="cart_total item text-right">Total</th>
+				</tr>
+			</thead>
+			<tfoot>
+				
+				
+													
+																								
+															<tr class="cart_total_price">
+							<td rowspan="4" colspan="3" id="cart_voucher" class="cart_voucher">
+															</td>
+							<td colspan="3" class="text-right">Total productos  (exc de imp)</td>
+							<td colspan="2" class="price" id="total_product">₡ 660,000</td>
+						</tr>
+													<tr style="display: none;">
+					<td colspan="3" class="text-right">
+													Total de papel de regalo (i.v.i)											</td>
+					<td colspan="2" class="price-discount price" id="total_wrapping">
+																					₡ 0
+																		</td>
+				</tr>
+															<tr class="cart_total_delivery">
+							<td colspan="3" class="text-right">Envío total</td>
+							<td colspan="2" class="price" id="total_shipping">₡ 5,000</td>
+						</tr>
+													<tr class="cart_total_voucher unvisible">
+					<td colspan="3" class="text-right">
+																					Total cupones (exc de imp)
+																		</td>
+					<td colspan="2" class="price-discount price" id="total_discount">
+																									₡ 0
+					</td>
+				</tr>
+								<tr class="cart_total_price">
+					<td colspan="3" class="total_price_container text-right">
+						<span>Total</span>
+                        <div class="hookDisplayProductPriceBlock-price">
+                            
+                        </div>
+					</td>
+											<td colspan="2" class="price" id="total_price_container">
+							<span id="total_price">₡ 665,000</span>
+						</td>
+									</tr>
+			</tfoot>
+			<tbody>
+																																																										
+					<tr id="product_1690_1484_0_0" class="cart_item first_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/1690-amd-ryzen-5-2400g.html#/69-marca-amd/227-socket-am4"><img src="./Pedido - ExtremeTechCR_files/amd-ryzen-5-2400g(1).jpg" alt="AMD Ryzen 5 2400G"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/1690-amd-ryzen-5-2400g.html#/69-marca-amd/227-socket-am4">AMD Ryzen 5 2400G</a></p>
+			<small class="cart_ref">SKU : EXT00008</small>		<small><a href="http://extremetechcr.com/tienda/componentes/1690-amd-ryzen-5-2400g.html#/69-marca-amd/227-socket-am4">Marca : AMD, Socket : AM4</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1690_1484_0">
+			            	               	 	<li class="price">₡ 94,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1690_1484_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1690_1484_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1690_1484_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1690&amp;ipa=1484&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1690_1484_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1690&amp;ipa=1484&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1690_1484_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1690&amp;ipa=1484&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1690_1484_0">
+												₡ 94,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_2151_1828_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/2151-asrock-a320m-hdv.html#/49-formato-micro_atx/227-socket-am4/263-chipset-amd_a320/318-audio-realtek_alc887/319-red-realtek_gbe_lan/356-marca-asrock"><img src="./Pedido - ExtremeTechCR_files/asrock-a320m-hdv(1).jpg" alt="Asrock A320M-HDV R4.0"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/2151-asrock-a320m-hdv.html#/49-formato-micro_atx/227-socket-am4/263-chipset-amd_a320/318-audio-realtek_alc887/319-red-realtek_gbe_lan/356-marca-asrock">Asrock A320M-HDV R4.0</a></p>
+			<small class="cart_ref">SKU : EXT00025</small>		<small><a href="http://extremetechcr.com/tienda/componentes/2151-asrock-a320m-hdv.html#/49-formato-micro_atx/227-socket-am4/263-chipset-amd_a320/318-audio-realtek_alc887/319-red-realtek_gbe_lan/356-marca-asrock">Marca : ASROCK, Socket : AM4, Chipset : AMD A320, Formato : Micro ATX, Audio : Realtek ALC887, Red : Realtek GbE LAN</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2151_1828_0">
+			            	               	 	<li class="price">₡ 32,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_2151_1828_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_2151_1828_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_2151_1828_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2151&amp;ipa=1828&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_2151_1828_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2151&amp;ipa=1828&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="2151_1828_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2151&amp;ipa=1828&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_2151_1828_0">
+												₡ 32,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_61_62_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/61-gskill-ripjaws-v-8-gb-ddr4-2400-rojo.html#/31-tipo_de_memoria-ddr4/33-capacidad-8_gb/73-marca-gskill/101-velocidad-ddr4_2400"><img src="./Pedido - ExtremeTechCR_files/gskill-ripjaws-v-8-gb-ddr4-2400-rojo(1).jpg" alt="G.SKILL Ripjaws V 8 GB DDR4 2400 - Rojo"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/61-gskill-ripjaws-v-8-gb-ddr4-2400-rojo.html#/31-tipo_de_memoria-ddr4/33-capacidad-8_gb/73-marca-gskill/101-velocidad-ddr4_2400">G.SKILL Ripjaws V 8 GB DDR4 2400 - Rojo</a></p>
+			<small class="cart_ref">SKU : EXT00061</small>		<small><a href="http://extremetechcr.com/tienda/componentes/61-gskill-ripjaws-v-8-gb-ddr4-2400-rojo.html#/31-tipo_de_memoria-ddr4/33-capacidad-8_gb/73-marca-gskill/101-velocidad-ddr4_2400">Marca : G.SKILL, Capacidad : 8 GB, Tipo de Memoria : DDR4, Velocidad : DDR4 2400</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_61_62_0">
+			            	               	 	<li class="price">₡ 25,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_61_62_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_61_62_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_61_62_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=61&amp;ipa=62&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_61_62_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=61&amp;ipa=62&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="61_62_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=61&amp;ipa=62&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_61_62_0">
+												₡ 25,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_2719_2317_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/2719-sapphire-pulse-radeon-rx-580-8-gb.html#/46-vram-8_gb/47-chip-amd/177-marca-sapphire/308-gpu-amd_radeon_rx_580_8_gb"><img src="./Pedido - ExtremeTechCR_files/sapphire-pulse-radeon-rx-580-8-gb(1).jpg" alt="Sapphire PULSE Radeon RX 580 8 GB"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/2719-sapphire-pulse-radeon-rx-580-8-gb.html#/46-vram-8_gb/47-chip-amd/177-marca-sapphire/308-gpu-amd_radeon_rx_580_8_gb">Sapphire PULSE Radeon RX 580 8 GB</a></p>
+			<small class="cart_ref">SKU : TV0629</small>		<small><a href="http://extremetechcr.com/tienda/componentes/2719-sapphire-pulse-radeon-rx-580-8-gb.html#/46-vram-8_gb/47-chip-amd/177-marca-sapphire/308-gpu-amd_radeon_rx_580_8_gb">Marca : SAPPHIRE, Chip : AMD, VRAM : 8 GB, GPU : AMD Radeon RX 580 8 GB</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2719_2317_0">
+			            	               	 	<li class="price">₡ 125,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_2719_2317_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_2719_2317_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_2719_2317_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2719&amp;ipa=2317&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_2719_2317_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2719&amp;ipa=2317&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="2719_2317_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2719&amp;ipa=2317&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_2719_2317_0">
+												₡ 125,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1491_1316_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/1491-kingston-ssdnow-a400-240-gb.html#/37-capacidad-240_gb/78-marca-kingston/112-interfaz-sata_iii/375-viernes_negro-almacenamiento"><img src="./Pedido - ExtremeTechCR_files/kingston-ssdnow-a400-240-gb(1).jpg" alt="Kingston SSDNow A400 240 GB"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/1491-kingston-ssdnow-a400-240-gb.html#/37-capacidad-240_gb/78-marca-kingston/112-interfaz-sata_iii/375-viernes_negro-almacenamiento">Kingston SSDNow A400 240 GB</a></p>
+			<small class="cart_ref">SKU : EXT00088</small>		<small><a href="http://extremetechcr.com/tienda/componentes/1491-kingston-ssdnow-a400-240-gb.html#/37-capacidad-240_gb/78-marca-kingston/112-interfaz-sata_iii/375-viernes_negro-almacenamiento">Marca : KINGSTON, Capacidad : 240 GB, Interfaz : SATA III, Viernes Negro : Almacenamiento</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1491_1316_0">
+			            	               	 	<li class="price">₡ 21,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1491_1316_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1491_1316_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1491_1316_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1491&amp;ipa=1316&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1491_1316_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1491&amp;ipa=1316&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1491_1316_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1491&amp;ipa=1316&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1491_1316_0">
+												₡ 21,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_2835_2418_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/2835-disco-duro-seagate-1-tb-7200-rpm.html#/41-capacidad-1_tb/110-formato-35/260-marca-seagate/375-viernes_negro-almacenamiento"><img src="./Pedido - ExtremeTechCR_files/disco-duro-seagate-1-tb-7200-rpm(1).jpg" alt="Disco Duro Seagate 1 TB 7200 RPM"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/2835-disco-duro-seagate-1-tb-7200-rpm.html#/41-capacidad-1_tb/110-formato-35/260-marca-seagate/375-viernes_negro-almacenamiento">Disco Duro Seagate 1 TB 7200 RPM</a></p>
+			<small class="cart_ref">SKU : EXT00087</small>		<small><a href="http://extremetechcr.com/tienda/componentes/2835-disco-duro-seagate-1-tb-7200-rpm.html#/41-capacidad-1_tb/110-formato-35/260-marca-seagate/375-viernes_negro-almacenamiento">Marca : SEAGATE, Capacidad : 1 TB, Formato : 3.5", Viernes Negro : Almacenamiento</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2835_2418_0">
+			            	               	 	<li class="price">₡ 29,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_2835_2418_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_2835_2418_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_2835_2418_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2835&amp;ipa=2418&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_2835_2418_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2835&amp;ipa=2418&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="2835_2418_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2835&amp;ipa=2418&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_2835_2418_0">
+												₡ 29,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_114_118_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/114-EVGA-600W-80-Plus.html#/24-certificacion-80_plus/29-modular-no/76-marca-evga"><img src="./Pedido - ExtremeTechCR_files/EVGA-600W-80-Plus(1).jpg" alt="EVGA 600W 80 Plus"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/114-EVGA-600W-80-Plus.html#/24-certificacion-80_plus/29-modular-no/76-marca-evga">EVGA 600W 80 Plus</a></p>
+			<small class="cart_ref">SKU : EXT00114</small>		<small><a href="http://extremetechcr.com/tienda/componentes/114-EVGA-600W-80-Plus.html#/24-certificacion-80_plus/29-modular-no/76-marca-evga">Marca : EVGA, Modular : No, Certificacion : 80 Plus</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_114_118_0">
+			            	               	 	<li class="price">₡ 30,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_114_118_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_114_118_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_114_118_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=114&amp;ipa=118&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_114_118_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=114&amp;ipa=118&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="114_118_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=114&amp;ipa=118&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_114_118_0">
+												₡ 30,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_622_570_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/622-bitfenix-nova-negro.html#/18-tamano-mid_tower/202-marca-bitfenix/225-tipo_de_panel-acrilico"><img src="./Pedido - ExtremeTechCR_files/bitfenix-nova-negro(1).jpg" alt="Bitfenix Nova Negro"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/622-bitfenix-nova-negro.html#/18-tamano-mid_tower/202-marca-bitfenix/225-tipo_de_panel-acrilico">Bitfenix Nova Negro</a></p>
+			<small class="cart_ref">SKU : EXT00125</small>		<small><a href="http://extremetechcr.com/tienda/componentes/622-bitfenix-nova-negro.html#/18-tamano-mid_tower/202-marca-bitfenix/225-tipo_de_panel-acrilico">Marca : BITFENIX, Tamaño : Mid Tower, Tipo de Panel : Acrilico</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_622_570_0">
+			            	               	 	<li class="price">₡ 18,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_622_570_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_622_570_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_622_570_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=622&amp;ipa=570&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_622_570_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=622&amp;ipa=570&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="622_570_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=622&amp;ipa=570&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_622_570_0">
+												₡ 18,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_2338_1980_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/perifericos/2338-eagle-warrior-wild-beast.html#/143-led-azul_rojo_morado"><img src="./Pedido - ExtremeTechCR_files/eagle-warrior-wild-beast(1).jpg" alt="Eagle Warrior Wild Beast"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/perifericos/2338-eagle-warrior-wild-beast.html#/143-led-azul_rojo_morado">Eagle Warrior Wild Beast</a></p>
+					<small><a href="http://extremetechcr.com/tienda/perifericos/2338-eagle-warrior-wild-beast.html#/143-led-azul_rojo_morado">LED : Azul-Rojo-Morado</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2338_1980_0">
+			            	               	 	<li class="price">₡ 12,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_2338_1980_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_2338_1980_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_2338_1980_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2338&amp;ipa=1980&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_2338_1980_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2338&amp;ipa=1980&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="2338_1980_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2338&amp;ipa=1980&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_2338_1980_0">
+												₡ 12,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1182_1041_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/perifericos/1182-thonet-vander-spiel-bluetooth-80w.html#/268-marca-thonet_vander"><img src="./Pedido - ExtremeTechCR_files/thonet-vander-spiel-bluetooth-80w(1).jpg" alt="Thonet &amp; Vander Spiel  - 80W"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/perifericos/1182-thonet-vander-spiel-bluetooth-80w.html#/268-marca-thonet_vander">Thonet &amp; Vander Spiel  - 80W</a></p>
+					<small><a href="http://extremetechcr.com/tienda/perifericos/1182-thonet-vander-spiel-bluetooth-80w.html#/268-marca-thonet_vander">Marca : Thonet &amp; Vander</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1182_1041_0">
+			            	               	 	<li class="price">₡ 20,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1182_1041_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1182_1041_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1182_1041_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1182&amp;ipa=1041&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1182_1041_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1182&amp;ipa=1041&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1182_1041_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1182&amp;ipa=1041&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1182_1041_0">
+												₡ 20,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_2107_1792_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/perifericos/2107-redragon-p012-capricorn.html#/223-marca-redragon"><img src="./Pedido - ExtremeTechCR_files/redragon-p012-capricorn(1).jpg" alt="Redragon P012 Capricorn"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/perifericos/2107-redragon-p012-capricorn.html#/223-marca-redragon">Redragon P012 Capricorn</a></p>
+			<small class="cart_ref">SKU : EXT00198</small>		<small><a href="http://extremetechcr.com/tienda/perifericos/2107-redragon-p012-capricorn.html#/223-marca-redragon">Marca : REDRAGON</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2107_1792_0">
+			            	               	 	<li class="price">₡ 3,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_2107_1792_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_2107_1792_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_2107_1792_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2107&amp;ipa=1792&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_2107_1792_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2107&amp;ipa=1792&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="2107_1792_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2107&amp;ipa=1792&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_2107_1792_0">
+												₡ 3,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1871_1605_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/1871-aoc-e2280swn.html#/10-tiempo_de_respuesta-5ms/11-frecuencia_vertical-60_hz/13-tipo_de_panel-tn/16-resolucion-1920x1080/88-marca-aoc/134-tamano-22_pulgadas"><img src="./Pedido - ExtremeTechCR_files/aoc-e2280swn(1).jpg" alt="AOC E2270SWN"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/1871-aoc-e2280swn.html#/10-tiempo_de_respuesta-5ms/11-frecuencia_vertical-60_hz/13-tipo_de_panel-tn/16-resolucion-1920x1080/88-marca-aoc/134-tamano-22_pulgadas">AOC E2270SWN</a></p>
+			<small class="cart_ref">SKU : EXT00162</small>		<small><a href="http://extremetechcr.com/tienda/componentes/1871-aoc-e2280swn.html#/10-tiempo_de_respuesta-5ms/11-frecuencia_vertical-60_hz/13-tipo_de_panel-tn/16-resolucion-1920x1080/88-marca-aoc/134-tamano-22_pulgadas">Marca : AOC, Tamaño : 22 pulgadas, Resolucion : 1920x1080, Tipo de Panel : TN, Frecuencia Vertical : 60 Hz, Tiempo de Respuesta : 5ms</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1871_1605_0">
+			            	               	 	<li class="price">₡ 61,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1871_1605_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1871_1605_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1871_1605_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1871&amp;ipa=1605&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1871_1605_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1871&amp;ipa=1605&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1871_1605_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1871&amp;ipa=1605&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1871_1605_0">
+												₡ 61,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_474_439_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/componentes/474-ups-cdp-1000va.html#/221-marca-cdp"><img src="./Pedido - ExtremeTechCR_files/ups-cdp-1000va(1).jpg" alt="UPS CDP 1000VA"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/componentes/474-ups-cdp-1000va.html#/221-marca-cdp">UPS CDP 1000VA</a></p>
+			<small class="cart_ref">SKU : EXT00171</small>		<small><a href="http://extremetechcr.com/tienda/componentes/474-ups-cdp-1000va.html#/221-marca-cdp">Marca : CDP</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_474_439_0">
+			            	               	 	<li class="price">₡ 28,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_474_439_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_474_439_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_474_439_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=474&amp;ipa=439&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_474_439_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=474&amp;ipa=439&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="474_439_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=474&amp;ipa=439&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_474_439_0">
+												₡ 28,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1059_937_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/perifericos/1059-msi-ds501.html#/71-marca-msi/147-audio-stereo/149-conexion-35mm"><img src="./Pedido - ExtremeTechCR_files/msi-ds501(1).jpg" alt="MSI DS501"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/perifericos/1059-msi-ds501.html#/71-marca-msi/147-audio-stereo/149-conexion-35mm">MSI DS501</a></p>
+			<small class="cart_ref">SKU : EXT00191</small>		<small><a href="http://extremetechcr.com/tienda/perifericos/1059-msi-ds501.html#/71-marca-msi/147-audio-stereo/149-conexion-35mm">Marca : MSI, Audio : Stereo, Conexion : 3.5mm</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Current supply. Ordering availlable</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1059_937_0">
+			            	               	 	<li class="price">₡ 10,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1059_937_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1059_937_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1059_937_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1059&amp;ipa=937&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1059_937_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1059&amp;ipa=937&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1059_937_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1059&amp;ipa=937&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1059_937_0">
+												₡ 10,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1672_0_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/inicio/1672-logitech-c922.html"><img src="./Pedido - ExtremeTechCR_files/logitech-c922(1).jpg" alt="Logitech C922"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/inicio/1672-logitech-c922.html">Logitech C922</a></p>
+						</td>
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1672_0_0">
+			            	               	 	<li class="price">₡ 50,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1672_0_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1672_0_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1672_0_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1672&amp;ipa=0&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1672_0_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1672&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1672_0_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1672&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1672_0_0">
+												₡ 50,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1867_0_0_0" class="cart_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/perifericos/1867-control-xbox-one-s-negro-adaptador-bt40.html"><img src="./Pedido - ExtremeTechCR_files/control-xbox-one-s-negro-adaptador-bt40(1).jpg" alt="Control Xbox One S - Negro + Adaptador BT 4.0"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/perifericos/1867-control-xbox-one-s-negro-adaptador-bt40.html">Control Xbox One S - Negro + Adaptador BT 4.0</a></p>
+						</td>
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1867_0_0">
+			            	               	 	<li class="price">₡ 42,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1867_0_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1867_0_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1867_0_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1867&amp;ipa=0&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1867_0_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1867&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1867_0_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1867&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1867_0_0">
+												₡ 42,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_2033_0_0_0" class="cart_item address_0 odd">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/pasta-termica/2033-thermal-grizzly-kryonaut-1g.html"><img src="./Pedido - ExtremeTechCR_files/thermal-grizzly-kryonaut-1g(1).jpg" alt="Thermal Grizzly Kryonaut - 1g"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/pasta-termica/2033-thermal-grizzly-kryonaut-1g.html">Thermal Grizzly Kryonaut - 1g</a></p>
+						</td>
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2033_0_0">
+			            	               	 	<li class="price">₡ 5,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_2033_0_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_2033_0_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_2033_0_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2033&amp;ipa=0&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_2033_0_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=2033&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="2033_0_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=2033&amp;ipa=0&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_2033_0_0">
+												₡ 5,000									</span>
+	</td>
+
+</tr>
+
+					
+																																																							
+					<tr id="product_1970_1804_0_0" class="cart_item last_item address_0 even">
+	<td class="cart_product">
+		<a href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/338-marca-huion"><img src="./Pedido - ExtremeTechCR_files/huion-inspiroy-h950p(1).jpg" alt="Huion Inspiroy H950P"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/338-marca-huion">Huion Inspiroy H950P</a></p>
+					<small><a href="http://extremetechcr.com/tienda/inicio/1970-huion-inspiroy-h950p.html#/338-marca-huion">Marca : HUION</a></small>	</td>
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_1970_1804_0">
+			            	               	 	<li class="price">₡ 55,000</li>
+													</ul>
+	</td>
+
+	<td class="cart_quantity text-center" data-title="Cantidad">
+								
+				<input type="hidden" value="1" name="quantity_1970_1804_0_0_hidden">
+				<input size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="1" name="quantity_1970_1804_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down button-minus btn-sm" id="cart_quantity_down_1970_1804_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1970&amp;ipa=1804&amp;id_address_delivery=0&amp;op=down&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Sustraer">
+				<span><i class="fa fa-minus"></i></span>
+				</a>
+				                	<a rel="nofollow" class="cart_quantity_up button-plus btn-sm" id="cart_quantity_up_1970_1804_0_0" href="http://extremetechcr.com/tienda/carrito?add=1&amp;id_product=1970&amp;ipa=1804&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4" title="Añadir"><span><i class="fa fa-plus"></i></span></a>
+				</div>
+						</td>
+
+			<td class="cart_delete text-center" data-title="Borrar">
+					<div>
+				<a rel="nofollow" title="Borrar" class="cart_quantity_delete" id="1970_1804_0_0" href="http://extremetechcr.com/tienda/carrito?delete=1&amp;id_product=1970&amp;ipa=1804&amp;id_address_delivery=0&amp;token=b83b206aca3270aad6a4144df86a81b4"><i class="fa fa-trash-o"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		<span class="price" id="total_product_price_1970_1804_0">
+												₡ 55,000									</span>
+	</td>
+
+</tr>
+
+					
+																				</tbody>
+
+					</table>
+	</div> <!-- end order-detail-content -->
+
+	
+	
+	

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/tcal.css" />
+    <script type="text/javascript" src="assets/tcal.js"></script>
+    <script src="assets/servicio.js"></script>
+    <link rel="stylesheet" href="assets/header-static.css">
+    <title>Path demo v3</title>
+</head>
+
+<body>
+    <div class="colorh">
+        <div class="container-fluid">
+            <header>
+                <!-- <h1>PathV3</h1> -->
+                <div class="logoheaderstyle">
+                    <img class="logoimageheader" src="assets/img/path-logo.png" alt="Missing logo!" style="width:auto;height:40px;">
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="formulario.html">Solicitar servicio</a>
+                </li>
+            </ul>
+        </nav>
+
+    <form>
+        <div class="colorb">
+            <div class="container">
+                <!-- Información doctor -->
+                <h3 class="text-center">Formulario</h3>
+                </br>
+                </br>
+                <div class="text-center">
+                    <h5 class=" badge badge-info" style="font-size: 130%;">Datos personales</h5>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label for="nombre">Nombre: </label>
+                            <input id="nombre" type="text"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo: </label>
+
+                            <input id="correo" type="text"></input>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label for="medicamentos_textarea">Medicamentos ingeridos:</label>
+                            </br>
+                            <textarea id="medicamentos_textarea" rows="2" cols="33"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-1">
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            </br>
+                            <textarea id="direccion" rows="5" cols="30"
+                                placeholder="25 metros este del colegio Santa María."></textarea><!--  -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h5 class=" badge badge-info" style="font-size: 130%;">Preferencias de especialista</h5>
+                </div>
+                </br>
+
+                <!-- Datos especialista -->
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="row">
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+
+                                <div class="form-group">
+                                    <label for="select_especialidad">Especialidad requerida:</label>
+                                    <select id="select_especialidad">
+                                        <option value="1">Medico</option>
+                                        <option value="2">Asistencia de pacientes</option>
+                                        <option value="3">Fisioterapeuta</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+
+                                <div class="form-group"><label for="genero_select">Género:</label>
+
+                                    <select id="genero_select">
+                                        <option value="1">- - -</option>
+                                        <option value="2">Masculino</option>
+                                        <option value="3">Femenino</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+
+                                <div class="form-group">
+                                    <label for="edad_dropdown">Edad:</label>
+                                    <select id="edad_dropdown">
+                                        <option value="1">20-30</option>
+                                        <option value="1">31-50</option>
+                                        <!--<option value="1">20-30</option>
+                                <option value="2">31-40</option>
+                                <option value="2">41-50</option>
+                                <option value="2">51-60</option>
+                                <option value="2">61-70</option>
+                                <option value="2">81-90</option>
+                                <option value="2">91+</option> -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    </br>
+                    <h5 class=" badge badge-info" style="font-size: 130%;">Datos servicio</h5>
+                </div>
+                </br>
+
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                        <div class="form-group">
+                            Horario:</br>
+                            De
+                            <select>
+                                <option value="1">1:00AM</option>
+                                <option value="1">2:00AM</option>
+                                <option value="1">3:00AM</option>
+                                <option value="1">4:00AM</option>
+                                <option value="1">5:00AM</option>
+                                <option value="1">6:00AM</option>
+                                <option value="1">7:00AM</option>
+                                <option value="1">8:00AM</option>
+                                <option value="1">9:00AM</option>
+                                <option value="1">10:00AM</option>
+                                <option value="1">11:00AM</option>
+                                <option value="1">12:00PM</option>
+                                <option value="1">1:00PM</option>
+                                <option value="1">2:00PM</option>
+                                <option value="1">3:00PM</option>
+                                <option value="1">4:00PM</option>
+                                <option value="1">5:00PM</option>
+                                <option value="1">6:00PM</option>
+                                <option value="1">7:00PM</option>
+                                <option value="1">8:00PM</option>
+                                <option value="1">9:00PM</option>
+                                <option value="1">10:00PM</option>
+                                <option value="1">11:00PM</option>
+                                <option value="1">12:00AM</option>
+                            </select>
+                            a
+                            <select>
+                                <option value="1">1:00AM</option>
+                                <option value="1">2:00AM</option>
+                                <option value="1">3:00AM</option>
+                                <option value="1">4:00AM</option>
+                                <option value="1">5:00AM</option>
+                                <option value="1">6:00AM</option>
+                                <option value="1">7:00AM</option>
+                                <option value="1">8:00AM</option>
+                                <option value="1">9:00AM</option>
+                                <option value="1">10:00AM</option>
+                                <option value="1">11:00AM</option>
+                                <option value="1">12:00PM</option>
+                                <option value="1">1:00PM</option>
+                                <option value="1">2:00PM</option>
+                                <option value="1">3:00PM</option>
+                                <option value="1">4:00PM</option>
+                                <option value="1">5:00PM</option>
+                                <option value="1">6:00PM</option>
+                                <option value="1">7:00PM</option>
+                                <option value="1">8:00PM</option>
+                                <option value="1">9:00PM</option>
+                                <option value="1">10:00PM</option>
+                                <option value="1">11:00PM</option>
+                                <option value="1">12:00AM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            Fecha:
+                            </br>
+                            <label for="desde">Desde:</label>
+                            <input type="text" id="desde" name="date" class="tcal" value="" />
+                            </br>
+                            <label for="hasta">Hasta:</label>
+                            <input type="text" id="hasta" name="date" class="tcal" value="" />
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        </br>
+                        <div class="form-group">
+                            Método de pago:
+                            <select>
+                                <option value="">MasterCard xxxx9938</option>
+                            </select><!--  -->
+
+                        </div>
+                        </br></br>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                <span>Al realizar el pago, acepto las </span>
+                <span>
+                    <a href="#">condiciones</a>
+                </span>
+                <span> de servicio.</span>
+
+                <input id="check_box_condiciones" type="checkbox">
+            </div>
+                </br>
+<div class="text-center">
+                <input class="btn btn-outline-primary" id="confirmar_servicio_click" type=button
+                    value="Confirmar y pagar">
+                <button type="button" id="cancelar" class="btn btn-outline-secondary">Cancelar</button>
+            </div>
+            </div>
+        </div>
+    </form>
+    </br>
+    <p class="text-center">ULACIT - TECHNOVATION 2019 1C</p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("check_box_condiciones").checked = true;
+        document.getElementById("cancelar").onclick = function () {
+            location.href = "index.html"
+        }
+        document.getElementById("confirmar_servicio_click").onclick = function () {
+            /* location.href = "info-doctor.html"; */
+            /* confirmar_servicio(); */
+            var e = document.getElementById("genero_select");
+            var strUser = e.options[e.selectedIndex].text;
+            sessionStorage.correo = document.getElementById("correo").value;
+            sessionStorage.genero = strUser;
+            if (strUser == "Masculino") {
+                sessionStorage.genero = "m";
+                location.href = "terminado.html";
+            } else {
+                sessionStorage.genero = "f";
+                location.href = "terminado.html";
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.presentacion {
+    width: auto;
+    /* height: auto; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+   /*  background: black; */
+}
+
+.p-0 {
+    /* background: red; */
+    float: left;
+    /* margin-right: 45%; */
+}
+
+.p-1 {
+    /* background: red; */
+    float: left;
+    margin-left: 27px;
+    /* margin-right: 45%; */
+}
+
+.p-2{
+    float: left;
+    margin-left: 27px;
+}
+
+/* @media only screen and (max-width: 764px) {
+    .p-1 {
+      background-color: lightblue;
+      margin-right: 15%;
+    }
+  } */
