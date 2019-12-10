@@ -5,7 +5,7 @@ function IMPRIMIR_ARCHIVO_PDF() {
         anio = date.getFullYear(),
         mes = date.getMonth(),
         dia = date.getDay(),
-        hora = date.getHours,
+        hora = date.getHours(),
         minutos = date.getMinutes(),
         segundos = date.getSeconds(),
         title_contenido_para_generar_PDF = generar_texto_para_titulo_de_archivo_PDF(dia, mes, anio, hora, minutos, segundos);
@@ -23,5 +23,5 @@ function cambiar_texto_del_titulo_de_la_pagina(texto) {
 
 //Genera el texto con el cual sera nombrado el archivo PDF que esta a punto de ser guardado.
 function generar_texto_para_titulo_de_archivo_PDF(dia, mes, anio, hora, minutos, segundos) {
-    return dia + "-" + mes + "-" + anio + hora + minutos + segundos + " - Ret Formulario Camas.";
+    return dia + "-" + mes + "-" + anio + "-h" + hora +"m"+ minutos +"s"+ segundos + " - Ret Formulario Camas";
 }
