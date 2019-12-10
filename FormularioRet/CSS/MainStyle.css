@@ -24,6 +24,11 @@ textarea {
     resize: none;
 }
 
+footer{
+    font-size: 10px;
+    color:#DADADA;
+}
+
 .seccion_caracteristicas_cama{
     background: #DADADA;
     padding-bottom: 1.5%;
@@ -31,14 +36,14 @@ textarea {
     margin-bottom: 1%;
 }
 
-
-
 @media only screen and (min-width: 991px) {
     
 }
 .columna_dos_de_seccion_caracteristicas_cama{
     margin-right: 25px;
 }
+
+
 
 @media only screen and (max-width: 991px) {
     .columna_dos_de_seccion_caracteristicas_cama{
@@ -64,10 +69,4 @@ textarea {
         width: 89%;
     }
     
-}
-
-@media only screen and (max-width: 442px) {
-    textarea{
-        width: 330px;
-    }
 }
