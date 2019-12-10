@@ -1,0 +1,65 @@
+.TITULARES_DE_SECCIONES {
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.segundo_titular {
+    font-size: 145%;
+}
+
+.CENTRAR {
+    text-align: center;
+}
+
+.SECCION_DE_PREGUNTAS {
+    font-size: 135%;
+}
+
+.PREGUNTA_SMALL {
+   margin-bottom: 3%;
+}
+
+textarea {
+    resize: none;
+}
+
+.seccion_caracteristicas_cama{
+    background: #DADADA;
+    padding-bottom: 1.5%;
+    padding-left: 4%;
+    margin-bottom: 1%;
+}
+
+@media only screen and (min-width: 991px) {
+    
+}
+.columna_dos_de_seccion_caracteristicas_cama{
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+    .columna_dos_de_seccion_caracteristicas_cama{
+        color:black;
+    }
+    
+    .IMAGEN_RET {
+        margin: 3%;
+        text-align: center;
+    }
+    .NUMERO_CUESTIONARIO_Y_FECHA {
+        margin: 3%;
+        text-align: center;
+    }
+    .IMAGEN_CAMA{
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .IMAGEN_CAMA{
+        width: 89%;
+    }
+    
+}
