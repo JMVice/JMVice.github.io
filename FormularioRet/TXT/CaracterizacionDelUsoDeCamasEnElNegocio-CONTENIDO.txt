@@ -1,0 +1,126 @@
+<div class="TITULARES_DE_SECCIONES">
+                            <h4>CARACTERIZACIÓN DEL USO DE CAMAS EN EL NEGOCIO</h4>
+                            <h4>Si usted es un negocio que tiene camas, hablemos un poco de las características y el uso
+                            </h4>
+                        </div>
+                        <div class="SECCION_DE_PREGUNTAS">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="inputTitle">
+                                        15. ¿Qué tipo de tamaño son las camas que utilizan en el negocio? (Opcion Multiple)
+                                    </div>
+                                    <input type="checkbox" name="s" value="ON" /> Individual<br>
+                                    <input type="checkbox" name="s" value="ON" /> Matrimonial<br>
+                                    <input type="checkbox" name="s" value="ON" /> Queen Size<br>
+                                    <input type="checkbox" name="s" value="ON" /> King Size<br>
+                                    <br>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="inputTitle">
+                                        16. ¿De qué material son las camas que utiliza?
+                                    </div>
+                                    <input type="radio" name="MaterialCamasQueUtilizaNegocio"
+                                           value="HierroPrincipalmente" />Hierro
+                                    principalente<br>
+                                    <input type="radio" name="MaterialCamasQueUtilizaNegocio"
+                                           value="MaderaPrincipalmente" />Madera
+                                    principalente<br>
+                                    <input type="radio" name="MaterialCamasQueUtilizaNegocio"
+                                           value="CombinacionDeHierroYMadera" />Combinación
+                                    de ambas<br>
+                                    <input type="radio" name="MaterialCamasQueUtilizaNegocio"
+                                           value="NingunaDeLasAnteriores" />Ninguna
+                                    de
+                                    las
+                                    anteriores<br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="inputTitle">
+                                17. ¿Son camas que poseen altura? (patas)
+                            </div>
+                            <input type="radio" name="CamasPoseenAlturaPatas" value="Si" />Sí<br>
+                            <input type="radio" name="CamasPoseenAlturaPatas" value="No" />No<br>
+
+
+                            18.¿Qué características poseen las camas que hacen uso o venden en su organización?
+
+                            <div class="seccion_caracteristicas_cama">
+                                Caracteristicas cama/s en su negocio
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        Tipo de cama
+                                        <select name="tipoCama">
+                                            <option></option>
+                                            <option>Individual</option>
+                                            <option>Matrimonial</option>
+                                            <option>Queen Size</option>
+                                            <option>King Size</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-12 col-sm-12 col-md-12 col-lg-3 columna_dos_de_seccion_caracteristicas_cama">
+                                        Cantidad de camas
+                                        <input type="text" />
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        ¿Qué tamaño posee? (Indicar medidas)
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        Posee respaldar
+                                        <select name="Posee respaldar">
+                                            <option></option>
+                                            <option>Sí</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-12 col-sm-12 col-md-12 col-lg-3 columna_dos_de_seccion_caracteristicas_cama">
+                                        ¿Cómo cuánto pesa?
+                                        <input type="text" name="ComoCuantoPesa" value="" />
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        ¿Qué altura posee? Centimetros
+                                        <input type="text" name="QueAlturaPosee" value="" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        ¿Empacada?
+                                        <select name="Empacada">
+                                            <option></option>
+                                            <option>Sí</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-12 col-sm-12 col-md-12 col-lg-3 columna_dos_de_seccion_caracteristicas_cama">
+                                        ¿Traía colchón?
+                                        <select name="traiaColchon">
+                                            <option></option>
+                                            <option>Sí</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        Precio en colones
+                                        <input type="text" name="precioColones" value="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="CONTENEDOR_PARA_MAS_CARACTERISTICAS_DE_CAMA_NEGOCIO_ID"></div>
+
+
+                            <input type="button" value="Agregar caracteristicas de otra cama"
+                                   id="boton_agregar_caracteristicas_de_otra_cama_negocio"
+                                   onclick="agregar_caracteristicas_de_otra_cama_negocio()" />
+                            <br>    
+                            <br>
+
+                        </div>

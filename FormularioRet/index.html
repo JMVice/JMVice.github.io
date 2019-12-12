@@ -1,156 +1,161 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <!-- BOOTSTRAP AND JQUERY IMPORTS -->
-        <!-- #region -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+<head>
+    <!-- BOOTSTRAP AND JQUERY IMPORTS -->
+    <!-- #region -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <!-- #endregion -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ret Formulario Camas</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="JS/PDF.js"></script>
-        <link rel="stylesheet" type="text/css" href="CSS/MainStyle.css">
-        <link rel="icon" type="image/png" href="IMG/favicon.png">
-        <script src="JS/AgregarCaracteristicasCama.js"></script>
+    <!-- #endregion -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ret Formulario Camas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSS/MainStyle.css">
+    <link rel="icon" type="image/png" href="IMG/favicon.png">
+    <script src="JS/PDF.js"></script>
+    <script src="JS/AgregarCaracteristicasCama.js"></script>
+    <script src="JS/ControladorPerfilEncuestado.js"></script>
+    <script src="JS/MetodosDeRetornoDeInputDelUsuario.js"></script>
+</head>
 
-    </head>
-
-    <body>
-        <div class="CONTENIDO_BODY">
-            <div class=container>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-2">
-                        <div class="IMAGEN_RET">
-                            <img src="IMG/RET.png" alt="IMAGEN PERDIDA!" width="150px;">
-                        </div>
+<body>
+    <div class="CONTENIDO_BODY">
+        <div class=container>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                    <div class="IMAGEN_RET">
+                        <img src="IMG/RET.png" alt="IMAGEN PERDIDA!" width="150px;">
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-10 CENTRAR">
-                        <div class="TITULAR_FORMULARIO">
-                            <h2>RET INTERNACIONAL - COSTA RICA</h2>
-                            <h3 class="segundo_titular">ENCUESTA PARA USO Y COMPRA DE CAMAS A BASE DE TARIMAS DE MADERA
-                                "CAMAS
-                                ECOREFUGGE"</h3>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-10 CENTRAR">
+                    <div class="TITULAR_FORMULARIO">
+                        <h2>RET INTERNACIONAL - COSTA RICA</h2>
+                        <h3 class="segundo_titular">ENCUESTA PARA USO Y COMPRA DE CAMAS A BASE DE TARIMAS DE MADERA
+                            "CAMAS
+                            ECOREFUGGE"</h3>
+                    </div>
+                </div>
+            </div>
+            <form method="POST">
+                <h4 class="TITULARES_DE_SECCIONES">PERFIL DEL CLIENTE</h4>
+                <div class="SECCION_DE_PREGUNTAS">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="PREGUNTA_SMALL PREGUNTA">
+                                1.Genero
+                                <select ID="generoid">
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="PREGUNTA_SMALL PREGUNTA">
+                                2.Edad:
+                                <input type="text" name="edad" value="" />
+                                años.
+                            </div>
+                            <div class="">
+                                3.Nacionalidad
+                                <input type="text" name="edad" value="" />
+                            </div>
+                            <br>
+                            <div class="">
+                                4.Perfil encuestado/a
+                                <select id="PERFIL_ENCUESTADO" name="perfilEncuestadoConsumidorClienteOAmbos"
+                                    onchange="ControladorPerfilEncuestado_Funcion()">
+                                    <option>Ambos</option>
+                                    <option>Cliente</option>
+                                    <option>Consumidor</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="">
+                                5.Posición/empleo
+                                <select name="posicionOEmpleo">
+                                    <option>Asalariado</option>
+                                    <option>Cuenta Propia</option>
+                                    <option>Empleador</option>
+                                    <option>Desempleado</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="">
+                                <div style="margin-bottom: 0px;">
+                                    6.Teléfonos
+                                </div>
+                                <textarea name="telefonos" rows="2" cols="40" placeholder=""></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <h4 class="TITULARES_DE_SECCIONES">
+                    SI NOS VAS A CONTESTAS COMO EMPRESA/CLIENTE, POR FAVOR, LLENE EL SIGUIENTE APARTADO
+                </h4>
+                <div class="SECCION_DE_PREGUNTAS">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class=" ">
+                                7.Tipo de empresa:<br>
+                                <input type="radio" name="TipoEmpresa" value="Fisica">Fisíca<br>
+                                <input type="radio" name="TipoEmpresa" value="Juridica">Jurídica<br>
+                            </div>
+                            <br>
+                            <div class=" ">
+                                <div>
+                                    8.Tamaño del negocio
+                                </div>
+                                <input type="text" name="" value="" />
+                            </div>
+                            <br>
+                            <div class=" ">
+                                <div>
+                                    9.¿A qué se dedica?
+                                </div>
+                                <textarea name="negocioAQueSeDedica" rows="2" cols="40"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="PREGUNTA_SMALL PREGUNTA">
+                                10.Ubicación del negocio (provincia)
+                                <input type="text" name="" value="" />
+                            </div>
+                            <br>
+                            <div class="PREGUNTA_SMALL PREGUNTA">
+                                10.1.Ubicación del negocio (cantón)
+                                <input type="text" name="" value="" />
+                            </div>
+                            <br>
+                            <div class="PREGUNTA">
+                                <div style="margin-top: 15px;">
+                                    10.2.Dirección exacta de la empresa
+                                </div>
+                                <textarea name="NegocioDireccionExacta" rows="2" cols="40"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form method="POST">
-                    <h4 class="TITULARES_DE_SECCIONES">PERFIL DEL CLIENTE</h4>
-                    <div class="SECCION_DE_PREGUNTAS">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                <div class="PREGUNTA_SMALL PREGUNTA">
-                                    1.Genero
-                                    <select ID="generoid">
-                                        <option value="Masculino">Masculino</option>
-                                        <option value="Femenino">Femenino</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
-                                </div>
-                                <div class="PREGUNTA_SMALL PREGUNTA">
-                                    2.Edad:
-                                    <input type="text" name="edad" value="" />
-                                    años.
-                                </div>
-                                <div class="">
-                                    3.Nacionalidad
-                                    <input type="text" name="edad" value="" />
-                                </div>
-                                <br>
-                                <div class="">
-                                    4.Perfil encuestado/a
-                                    <select name="perfilEncuestadoConsumidorClienteOAmbos">
-                                        <option>Cliente</option>
-                                        <option>Consumidor</option>
-                                        <option>Ambos</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                <div class="">
-                                    5.Posición/empleo
-                                    <select name="posicionOEmpleo">
-                                        <option>Asalariado</option>
-                                        <option>Cuenta Propia</option>
-                                        <option>Empleador</option>
-                                        <option>Desempleado</option>
-                                    </select>
-                                </div>
-                                <br>
-
-                                <div class="">
-                                    <div style="margin-bottom: 0px;">
-                                        6.Teléfonos
-                                    </div>
-                                    <textarea name="telefonos" rows="2" cols="40" placeholder=""></textarea>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <br>
-                    <h4 class="TITULARES_DE_SECCIONES">
-                        SI NOS VAS A CONTESTAS COMO EMPRESA/CLIENTE, POR FAVOR, LLENE EL SIGUIENTE APARTADO
-                    </h4>
-                    <div class="SECCION_DE_PREGUNTAS">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                <div class=" ">
-                                    7.Tipo de empresa:<br>
-                                    <input type="radio" name="TipoEmpresa" value="Fisica">Fisíca<br>
-                                    <input type="radio" name="TipoEmpresa" value="Juridica">Jurídica<br>
-                                </div>
-                                <br>
-                                <div class=" ">
-                                    <div>
-                                        8.Tamaño del negocio
-                                    </div>
-                                    <input type="text" name="" value="" />
-                                </div>
-                                <br>
-                                <div class=" ">
-                                    <div>
-                                        9.¿A qué se dedica?
-                                    </div>
-                                    <textarea name="negocioAQueSeDedica" rows="2" cols="40"></textarea>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                <div class="PREGUNTA_SMALL PREGUNTA">
-                                    10.Ubicación del negocio (provincia)
-                                    <input type="text" name="" value="" />
-                                </div>
-                                <br>
-                                <div class="PREGUNTA_SMALL PREGUNTA">
-                                    10.1.Ubicación del negocio (cantón)
-                                    <input type="text" name="" value="" />
-                                </div>
-                                <br>
-                                <div class="PREGUNTA">
-                                    <div style="margin-top: 15px;">
-                                        10.2.Dirección exacta de la empresa
-                                    </div>
-                                    <textarea name="NegocioDireccionExacta" rows="2" cols="40"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
+                <br>
+                <div id="CaracterizacionDelUsoDeCamasEnElHogar">
                     <div class="TITULARES_DE_SECCIONES">
                         <h4>CARACTERIZACIÓN DEL USO DE CAMAS EN SU HOGAR</h4>
-                        <h4>Describa cómo es el uso, características de las camas que usted posee en el lugar donde estás
+                        <h4>Describa cómo es el uso, características de las camas que usted posee en el lugar donde
+                            estás
                             viviendo
                     </div>
                     </h4>
@@ -161,10 +166,12 @@
                                 <div class="inputTitle">
                                     11.¿La vivienda donde usted reside actualmente es?
                                 </div>
-                                <input type="radio" name="perfilViviendaEnQueReside" value="PropiaTotalmentePagada" />Propia
+                                <input type="radio" name="perfilViviendaEnQueReside"
+                                    value="PropiaTotalmentePagada" />Propia
                                 (Totalmenta
                                 pagada)<br>
-                                <input type="radio" name="perfilViviendaEnQueReside" value="PropiaAunPagando" />Propia (Aún
+                                <input type="radio" name="perfilViviendaEnQueReside" value="PropiaAunPagando" />Propia
+                                (Aún
                                 pagando)<br>
                                 <input type="radio" name="perfilViviendaEnQueReside" value="Alquilada" />Alquilada<br>
                                 <input type="radio" name="perfilViviendaEnQueReside" value="condicionDeCalle" /> En
@@ -184,17 +191,20 @@
                                 <div class="inputTitle">
                                     11.2.¿En la vivienda actual poseía camas o tuvo que comprar? ¿Cuántas?
                                 </div>
-                                <input type="radio" name="EstadoCamasViviendaQuePoseiaHabian" value="Compre" />Compré<br>
-                                <input type="radio" name="EstadoCamasViviendaQuePoseiaHabian" value="Habian" />Habían<br>
+                                <input type="radio" name="EstadoCamasViviendaQuePoseiaHabian"
+                                    value="Compre" />Compré<br>
+                                <input type="radio" name="EstadoCamasViviendaQuePoseiaHabian"
+                                    value="Habian" />Habían<br>
                                 Número: <input type="text" name="EstadoCamasViviendaQuePoseiaNumero" value="" />
                                 <br><br>
                                 <div class="inputTitle">
                                     12.¿Prefiere alquilar un lugar que ya tenga camas o comprarlas?
                                 </div>
-                                <input type="radio" name="prefiereAlquilarLugarConCamasOComprarlas" value="ConCamas" />Que
+                                <input type="radio" name="prefiereAlquilarLugarConCamasOComprarlas"
+                                    value="ConCamas" />Que
                                 tenga<br>
                                 <input type="radio" name="prefiereAlquilarLugarConCamasOComprarlas"
-                                       value="ComprarCamas" />Que
+                                    value="ComprarCamas" />Que
                                 no
                                 tenga<br>
                                 <br>
@@ -221,7 +231,8 @@
                                     11.7.Recién llegado, ¿qué prefiere?
                                 </div>
                                 <input type="radio" name="recienLlegadoQuePrefiere" value="CamaSola" />Cama sola<br>
-                                <input type="radio" name="recienLlegadoQuePrefiere" value="SoloColchon" />Solo colchon<br>
+                                <input type="radio" name="recienLlegadoQuePrefiere" value="SoloColchon" />Solo
+                                colchon<br>
                                 <input type="radio" name="recienLlegadoQuePrefiere" value="CamaConColchon" />Cama con
                                 colchon<br>
                                 <br>
@@ -238,16 +249,16 @@
                                     13.¿De qué material son las camas que utiliza?
                                 </div>
                                 <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
-                                       value="HierroPrincipalmente" />Hierro
+                                    value="HierroPrincipalmente" />Hierro
                                 principalente<br>
                                 <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
-                                       value="MaderaPrincipalmente" />Madera
+                                    value="MaderaPrincipalmente" />Madera
                                 principalente<br>
                                 <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
-                                       value="CombinacionDeHierroYMadera" />Combinación
+                                    value="CombinacionDeHierroYMadera" />Combinación
                                 de ambas<br>
                                 <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
-                                       value="NingunaDeLasAnteriores" />Ninguna
+                                    value="NingunaDeLasAnteriores" />Ninguna
                                 de
                                 las
                                 anteriores<br>
@@ -327,6 +338,8 @@
                         </div>
                         <br>
                     </div>
+                </div>
+                <div id="CaracterizacionDelUsoDeCamasEnElNegocio">
                     <div class="TITULARES_DE_SECCIONES">
                         <h4>CARACTERIZACIÓN DEL USO DE CAMAS EN EL NEGOCIO</h4>
                         <h4>Si usted es un negocio que tiene camas, hablemos un poco de las características y el uso
@@ -349,16 +362,16 @@
                                     16. ¿De qué material son las camas que utiliza?
                                 </div>
                                 <input type="radio" name="MaterialCamasQueUtilizaNegocio"
-                                       value="HierroPrincipalmente" />Hierro
+                                    value="HierroPrincipalmente" />Hierro
                                 principalente<br>
                                 <input type="radio" name="MaterialCamasQueUtilizaNegocio"
-                                       value="MaderaPrincipalmente" />Madera
+                                    value="MaderaPrincipalmente" />Madera
                                 principalente<br>
                                 <input type="radio" name="MaterialCamasQueUtilizaNegocio"
-                                       value="CombinacionDeHierroYMadera" />Combinación
+                                    value="CombinacionDeHierroYMadera" />Combinación
                                 de ambas<br>
                                 <input type="radio" name="MaterialCamasQueUtilizaNegocio"
-                                       value="NingunaDeLasAnteriores" />Ninguna
+                                    value="NingunaDeLasAnteriores" />Ninguna
                                 de
                                 las
                                 anteriores<br>
@@ -447,316 +460,310 @@
 
 
                         <input type="button" value="Agregar caracteristicas de otra cama"
-                               id="boton_agregar_caracteristicas_de_otra_cama_negocio"
-                               onclick="agregar_caracteristicas_de_otra_cama_negocio()" />
-                        <br>    
+                            id="boton_agregar_caracteristicas_de_otra_cama_negocio"
+                            onclick="agregar_caracteristicas_de_otra_cama_negocio()" />
+                        <br>
                         <br>
 
                     </div>
-
-
-
-
-
-                    <div class="TITULARES_DE_SECCIONES">
-                        <h4>CRITERIOS DE COMPRA PARA ELEGIR UNA CAMA</h4>
+                </div>
+                <div class="TITULARES_DE_SECCIONES">
+                    <h4>CRITERIOS DE COMPRA PARA ELEGIR UNA CAMA</h4>
+                </div>
+                <div class="SECCION_DE_PREGUNTAS">
+                    <div class="CENTRAR">
+                        19. ¿Qué criterios a la hora de comprar una cama, toma en cuenta?
                     </div>
-                    <div class="SECCION_DE_PREGUNTAS">
-                        <div class="CENTRAR">
-                            19. ¿Qué criterios a la hora de comprar una cama, toma en cuenta?
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-1 col-lg-2"></div>
+                        <div class="col-12 col-sm-12 col-md-10 col-lg-8">
+
+                            <table border="1" class="CENTRAR table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Criterios</th>
+                                        <th scope="col">Marcar criterio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tamaño</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Peso</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Desplegable</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fácil de armar</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Fácil transporte</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Acabados finos</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Barnizada</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo de materiales</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Confortable</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Precio</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Espejo</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Respaldar</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo de esamblaje</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Gavetas</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Accesorios</td>
+                                        <td>
+                                            <input type="checkbox" name="" value="ON" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-1 col-lg-2"></div>
-                            <div class="col-12 col-sm-12 col-md-10 col-lg-8">
-
-                                <table border="1" class="CENTRAR table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Criterios</th>
-                                            <th scope="col">Marcar criterio</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tamaño</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Peso</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Desplegable</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fácil de armar</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Fácil transporte</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Acabados finos</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Barnizada</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tipo de materiales</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Confortable</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Precio</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Espejo</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Respaldar</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tipo de esamblaje</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Gavetas</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Accesorios</td>
-                                            <td>
-                                                <input type="checkbox" name="" value="ON" />
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-1 col-lg-0"></div>
-                        </div>
-                        <br>
+                        <div class="col-12 col-sm-12 col-md-1 col-lg-0"></div>
                     </div>
-                    <div class="TITULARES_DE_SECCIONES">
-                        <h4>POTENCIALIDADES DE LAS CAMAS A BASE DE TARIMAS DE MADERA</h4>
-                    </div>
-                    <div class="SECCION_DE_PREGUNTAS">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                38. ¿Le interesa comprar una cama de tarima de madera rústica artesanal con madera
-                                reutilizada,
-                                curada
-                                y
-                                trabajada?<br>
-                                <input type="radio" name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizada"
-                                       value="Si" />Sí<br>
-                                <input type="radio" name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizada"
-                                       value="No" />No<br>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                38.1 ¿Qué prefiere?<br>
-                                <input type="radio"
-                                       name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizadaConSinColchon"
-                                       value="ConColchon" />Con
-                                colchón<br>
-                                <input type="radio"
-                                       name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizadaConSinColchon"
-                                       value="SinColchon" />Sin
-                                colchón<br>
-                            </div>
+                    <br>
+                </div>
+                <div class="TITULARES_DE_SECCIONES">
+                    <h4>POTENCIALIDADES DE LAS CAMAS A BASE DE TARIMAS DE MADERA</h4>
+                </div>
+                <div class="SECCION_DE_PREGUNTAS">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            38. ¿Le interesa comprar una cama de tarima de madera rústica artesanal con madera
+                            reutilizada,
+                            curada
+                            y
+                            trabajada?<br>
+                            <input type="radio" name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizada"
+                                value="Si" />Sí<br>
+                            <input type="radio" name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizada"
+                                value="No" />No
+
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-3"> </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
-                                39. ¿Qué tamaño de cama estaría dispuesto a comprar?
-                                <table border="1">
-                                    <thead>
-                                        <tr>
-                                            <th>Detalle cama</th>
-                                            <th>Sí</th>
-                                            <th>No</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Individual(1,90 x 1,13 y posee 35 cm de altura)</td>
-                                            <td> <input type="radio" name="TamanioCamaAComprarIndividual" value="Si" />
-                                            </td>
-                                            <td><input type="radio" name="TamanioCamaAComprarIndividual" value="No" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Matrimonial (1,40 x 1,90 y posee 35cm de altura)</td>
-                                            <td> <input type="radio" name="TamanioCamaAComprarMatrimonial" value="Si" />
-                                            </td>
-                                            <td><input type="radio" name="TamanioCamaAComprarMatrimonial" value="No" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Queen Size (1.50 metros de ancho y 2 metros de largo) </td>
-                                            <td> <input type="radio" name="TamanioCamaAComprarQueenSize" value="Si" />
-                                            </td>
-                                            <td><input type="radio" name="TamanioCamaAComprarQueenSize" value="No" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>King Size (200 cm. de ancho x 200 cm. de largo.)</td>
-                                            <td> <input type="radio" name="TamanioCamaAComprarKingSize" value="Si" />
-                                            </td>
-                                            <td><input type="radio" name="TamanioCamaAComprarKingSize" value="No" />
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                40. ¿Qué uso le darías a la cama de tarima de madera?<br>
-                                <textarea name="queUsoLeDariasALaCamaDeTarimaDeMadera" rows="2" cols="40"></textarea>
-                                <br>
-                                <br>41. ¿Prefiere diseñar su cama o comprar una estandarizada?<br>
-                                <select name="camaBaseDeTarimaDeMaderaEstandarizadaODisenioPropio">
-                                    <option>Estandarizada</option>
-                                    <option>Diseño propio</option>
-                                </select>
-                                <br><br>
-                                42. ¿Le interesaría comprar una cama de tarima de madera sin altura?<br>
-                                <input type="radio" name="CamaTarimaDeMaderaLeInteresaComprarUna" value="Si" />Sí<br>
-                                <input type="radio" name="CamaTarimaDeMaderaLeInteresaComprarUna" value="No" />No<br>
-                                <br>
-                                43. Para efectos de comodidad, ¿Qué prefiere con al cama de tarima de madera?<br>
-                                <input type="radio" name="CamaTarimaDeMaderaQuePrefiere43"
-                                       value="queSeaDobleYFacilDeGuardar" />Que
-                                se
-                                doble y fácil de guardar <br>
-                                <input type="radio" name="CamaTarimaDeMaderaQuePrefiere43"
-                                       value="QueSeMantengaFija" />Que
-                                se
-                                mantenga
-                                fija<br>
-                                <input type="radio" name="CamaTarimaDeMaderaQuePrefiere43"
-                                       value="QueSeDesarmeParaGuarda" />Que
-                                se
-                                desarme
-                                para guardar<br>
-                                <br>
-                                43.1 ¿Qué peso como mínimo debe tener? (Expresar en kilogramos)<br>
-                                <input type="radio" name="TipoEmpresa" value="PesoCama" /> Menos de 20 kilos <br>
-                                <input type="radio" name="TipoEmpresa" value="PesoCama" /> Más de 20 kilos <br>
-                                <input type="radio" name="TipoEmpresa" value="PesoCama" /> Más de 50 kilos <br>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                44. ¿Le interesaría comprar una cama de tarima de madera que tenga gavetas?<br>
-                                <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaGavetas"
-                                       value="Si" />Sí<br>
-                                <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaGavetas"
-                                       value="No" />No<br><br>
-                                45. ¿Le interesaría comprar una cama de tarima de madera que tenga respaldar?<br>
-                                <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaRespaldar"
-                                       value="Si" />Sí<br>
-                                <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaRespaldar"
-                                       value="No" />No<br>
-                                <br>
-                            </div>
-                            <br>
-                            <br>
-                        </div>
-                        <br>
-                        47. Nuesta cama modelo individualizada:<br><br>
-                        <img src="IMG/cama.png" alt="Imagen perdida" class="IMAGEN_CAMA" /><br><br>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                48. ¿Pagarías con 40 mil colones por esta cama?<br>
-                                <input type="radio" name="ComprariasNuestaCamaModeloIndividualizada" value="Si" />Sí<br>
-                                <input type="radio" name="ComprariasNuestaCamaModeloIndividualizada" value="No" />No<br>
-                                48.1 ¿Por qué?<br>
-                                <textarea name="ComprariasNuestraCAmaModeloIndividualizadaSiNoRazon" rows="3"
-                                          cols="40"></textarea><br>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                48. ¿Te gustaría que se incluya el servicio de transporte por la compra de la cama?<br>
-                                <input type="radio"
-                                       name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaQueSeHagaTransporte"
-                                       value="Si" />Sí<br>
-                                <input type="radio"
-                                       name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaQueSeHagaTransporte"
-                                       value="No" />No<br>
-                                49. ¿Te gustaría regalar una cama de este tipo?<br>
-                                <input type="radio" name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaRegalarUna"
-                                       value="Si" />Sí<br>
-                                <input type="radio" name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaRegalarUna"
-                                       value="No" />No
-                            </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            38.1 ¿Qué prefiere?<br>
+                            <input type="radio"
+                                name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizadaConSinColchon"
+                                value="ConColchon" />Con
+                            colchón<br>
+                            <input type="radio"
+                                name="CompraCamaTarimaMaderaRusticaArtesanalMaderaReutilizadaConSinColchon"
+                                value="SinColchon" />Sin
+                            colchón<br>
                         </div>
                     </div>
                     <br>
-                    <input class="btn btn-success" width="100%" onclick="IMPRIMIR_ARCHIVO_PDF()"
-                           style="width: 100%; height: 50px; font-size: 30px; margin-bottom: 15px; padding-bottom: 53px;"
-                           type="button" value="Generar archivo PDF" />
-                    <div class="TITULARES_DE_SECCIONES">
-                        <p style="font-size: 20px;">GRACIAS POR HABERNOS ATENDIDO, ESTE PROYECTO BUSCA SATISFACER LA
-                            NECESIDAD DE LOS CLIENTES Y CONSUMIDORES.
-                            <br>
-                            Para cualquier otra información, escribirnos al correo a.machado@theret.org
-                        </p>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3"> </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                            39. ¿Qué tamaño de cama estaría dispuesto a comprar?
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>Detalle cama</th>
+                                        <th>Sí</th>
+                                        <th>No</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Individual(1,90 x 1,13 y posee 35 cm de altura)</td>
+                                        <td> <input type="radio" name="TamanioCamaAComprarIndividual" value="Si" />
+                                        </td>
+                                        <td><input type="radio" name="TamanioCamaAComprarIndividual" value="No" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matrimonial (1,40 x 1,90 y posee 35cm de altura)</td>
+                                        <td> <input type="radio" name="TamanioCamaAComprarMatrimonial" value="Si" />
+                                        </td>
+                                        <td><input type="radio" name="TamanioCamaAComprarMatrimonial" value="No" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Queen Size (1.50 metros de ancho y 2 metros de largo) </td>
+                                        <td> <input type="radio" name="TamanioCamaAComprarQueenSize" value="Si" />
+                                        </td>
+                                        <td><input type="radio" name="TamanioCamaAComprarQueenSize" value="No" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>King Size (200 cm. de ancho x 200 cm. de largo.)</td>
+                                        <td> <input type="radio" name="TamanioCamaAComprarKingSize" value="Si" />
+                                        </td>
+                                        <td><input type="radio" name="TamanioCamaAComprarKingSize" value="No" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </form>
-            </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            40. ¿Qué uso le darías a la cama de tarima de madera?<br>
+                            <textarea name="queUsoLeDariasALaCamaDeTarimaDeMadera" rows="2" cols="40"></textarea>
+                            <br>
+                            <br>41. ¿Prefiere diseñar su cama o comprar una estandarizada?<br>
+                            <select name="camaBaseDeTarimaDeMaderaEstandarizadaODisenioPropio">
+                                <option>Estandarizada</option>
+                                <option>Diseño propio</option>
+                            </select>
+                            <br><br>
+                            42. ¿Le interesaría comprar una cama de tarima de madera sin altura?<br>
+                            <input type="radio" name="CamaTarimaDeMaderaLeInteresaComprarUna" value="Si" />Sí<br>
+                            <input type="radio" name="CamaTarimaDeMaderaLeInteresaComprarUna" value="No" />No<br>
+                            <br>
+                            43. Para efectos de comodidad, ¿Qué prefiere con al cama de tarima de madera?<br>
+                            <input type="radio" name="CamaTarimaDeMaderaQuePrefiere43"
+                                value="queSeaDobleYFacilDeGuardar" />Que
+                            se
+                            doble y fácil de guardar <br>
+                            <input type="radio" name="CamaTarimaDeMaderaQuePrefiere43" value="QueSeMantengaFija" />Que
+                            se
+                            mantenga
+                            fija<br>
+                            <input type="radio" name="CamaTarimaDeMaderaQuePrefiere43"
+                                value="QueSeDesarmeParaGuarda" />Que
+                            se
+                            desarme
+                            para guardar<br>
+                            <br>
+                            43.1 ¿Qué peso como mínimo debe tener? (Expresar en kilogramos)<br>
+                            <input type="radio" name="TipoEmpresa" value="PesoCama" /> Menos de 20 kilos <br>
+                            <input type="radio" name="TipoEmpresa" value="PesoCama" /> Más de 20 kilos <br>
+                            <input type="radio" name="TipoEmpresa" value="PesoCama" /> Más de 50 kilos <br>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            44. ¿Le interesaría comprar una cama de tarima de madera que tenga gavetas?<br>
+                            <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaGavetas" value="Si" />Sí<br>
+                            <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaGavetas"
+                                value="No" />No<br><br>
+                            45. ¿Le interesaría comprar una cama de tarima de madera que tenga respaldar?<br>
+                            <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaRespaldar" value="Si" />Sí<br>
+                            <input type="radio" name="CamaTarimaDeMaderaLegustariaQueTengaRespaldar" value="No" />No<br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    47. Nuesta cama modelo individualizada:<br><br>
+                    <img src="IMG/cama.png" alt="Imagen perdida" class="IMAGEN_CAMA" /><br><br>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            48. ¿Pagarías con 40 mil colones por esta cama?<br>
+                            <input type="radio" name="ComprariasNuestaCamaModeloIndividualizada" value="Si" />Sí<br>
+                            <input type="radio" name="ComprariasNuestaCamaModeloIndividualizada" value="No" />No<br>
+                            48.1 ¿Por qué?<br>
+                            <textarea name="ComprariasNuestraCAmaModeloIndividualizadaSiNoRazon" rows="3"
+                                cols="40"></textarea><br>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            48. ¿Te gustaría que se incluya el servicio de transporte por la compra de la cama?<br>
+                            <input type="radio"
+                                name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaQueSeHagaTransporte"
+                                value="Si" />Sí<br>
+                            <input type="radio"
+                                name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaQueSeHagaTransporte"
+                                value="No" />No<br>
+                            49. ¿Te gustaría regalar una cama de este tipo?<br>
+                            <input type="radio" name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaRegalarUna"
+                                value="Si" />Sí<br>
+                            <input type="radio" name="ComprariasNuestaCamaModeloIndividualizadaTeGustariaRegalarUna"
+                                value="No" />No
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <input class="btn btn-success" width="100%" onclick="IMPRIMIR_ARCHIVO_PDF()"
+                    style="width: 100%; height: 50px; font-size: 30px; margin-bottom: 15px; padding-bottom: 53px;"
+                    type="button" value="Generar archivo PDF" />
+                <div class="TITULARES_DE_SECCIONES">
+                    <p style="font-size: 20px;">GRACIAS POR HABERNOS ATENDIDO, ESTE PROYECTO BUSCA SATISFACER LA
+                        NECESIDAD DE LOS CLIENTES Y CONSUMIDORES.
+                        <br>
+                        Para cualquier otra información, escribirnos al correo a.machado@theret.org
+                    </p>
+                </div>
+            </form>
         </div>
-    </body>
-    <footer class="CENTRAR">
-        Made by V. V1.1
-    </footer>
+    </div>
+</body>
+<footer class="CENTRAR">
+    Made by V. V1.1
+</footer>
 
 </html>

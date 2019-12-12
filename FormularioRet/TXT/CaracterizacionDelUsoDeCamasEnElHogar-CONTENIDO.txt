@@ -1,0 +1,180 @@
+                        <div class="TITULARES_DE_SECCIONES">
+                            <h4>CARACTERIZACIÓN DEL USO DE CAMAS EN SU HOGAR</h4>
+                            <h4>Describa cómo es el uso, características de las camas que usted posee en el lugar donde estás
+                                viviendo
+                        </div>
+                        </h4>
+
+                        <div class="SECCION_DE_PREGUNTAS">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="inputTitle">
+                                        11.¿La vivienda donde usted reside actualmente es?
+                                    </div>
+                                    <input type="radio" name="perfilViviendaEnQueReside" value="PropiaTotalmentePagada" />Propia
+                                    (Totalmenta
+                                    pagada)<br>
+                                    <input type="radio" name="perfilViviendaEnQueReside" value="PropiaAunPagando" />Propia (Aún
+                                    pagando)<br>
+                                    <input type="radio" name="perfilViviendaEnQueReside" value="Alquilada" />Alquilada<br>
+                                    <input type="radio" name="perfilViviendaEnQueReside" value="condicionDeCalle" /> En
+                                    condición de
+                                    calle
+                                    (pase 11.3)
+                                    <br><br>
+                                    <div class="inputTitle">
+                                        11.1.¿En la vivienda actual poseía camas o tuvo que comprar?
+                                    </div>
+                                    <input type="radio" name="EstadoCamasViviendaQuePoseia" value="Compre" />Compré<br>
+                                    <input type="radio" name="EstadoCamasViviendaQuePoseia" value="YaTenian" />Ya tenían<br>
+                                    <input type="radio" name="EstadoCamasViviendaQuePoseia" value="Ambas" />Ambas<br>
+                                    <input type="radio" name="EstadoCamasViviendaQuePoseia" value="NoTengo" />No tengo (pase
+                                    11.3)<br>
+                                    <br>
+                                    <div class="inputTitle">
+                                        11.2.¿En la vivienda actual poseía camas o tuvo que comprar? ¿Cuántas?
+                                    </div>
+                                    <input type="radio" name="EstadoCamasViviendaQuePoseiaHabian" value="Compre" />Compré<br>
+                                    <input type="radio" name="EstadoCamasViviendaQuePoseiaHabian" value="Habian" />Habían<br>
+                                    Número: <input type="text" name="EstadoCamasViviendaQuePoseiaNumero" value="" />
+                                    <br><br>
+                                    <div class="inputTitle">
+                                        12.¿Prefiere alquilar un lugar que ya tenga camas o comprarlas?
+                                    </div>
+                                    <input type="radio" name="prefiereAlquilarLugarConCamasOComprarlas" value="ConCamas" />Que
+                                    tenga<br>
+                                    <input type="radio" name="prefiereAlquilarLugarConCamasOComprarlas"
+                                           value="ComprarCamas" />Que
+                                    no
+                                    tenga<br>
+                                    <br>
+                                    <div class="inputTitle">
+                                        13.Recién llegado/a, ¿tenía cama?
+                                    </div>
+                                    <input type="radio" name="recienLlegadoTeniaCama" value="Tenia" />Sí<br>
+                                    <input type="radio" name="recienLlegadoTeniaCama" value="NoTenia" />No<br>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <br>
+                                    <div class="inputTitle">
+                                        11.5.Recién llegado/a, ¿tenías colchón?
+                                    </div>
+                                    <input type="radio" name="recienLlegadoTeniasColchon" value="Tenia" />Sí<br>
+                                    <input type="radio" name="recienLlegadoTeniasColchon" value="NoTenia" />No<br>
+                                    <br>
+                                    <div class="inputTitle">
+                                        11.6.¿Qué significa para usted, tener cama recién llegado al país?
+                                    </div>
+                                    <textarea name="significadoTenerCamaRecienLlegado" rows="2" cols="40"></textarea>
+                                    <br>
+                                    <div class="inputTitle">
+                                        11.7.Recién llegado, ¿qué prefiere?
+                                    </div>
+                                    <input type="radio" name="recienLlegadoQuePrefiere" value="CamaSola" />Cama sola<br>
+                                    <input type="radio" name="recienLlegadoQuePrefiere" value="SoloColchon" />Solo colchon<br>
+                                    <input type="radio" name="recienLlegadoQuePrefiere" value="CamaConColchon" />Cama con
+                                    colchon<br>
+                                    <br>
+                                    <div class="inputTitle">
+                                        12.¿Qué tamaño son las camas que utilizan en su hogar? (Opción múltiple)
+                                    </div>
+
+                                    <input type="checkbox" name="TAMANIOASJKDNQW" value="ON" /> Individual<br>
+                                    <input type="checkbox" name="TAMANIOASJKDNQW" value="ON" /> Matrimonial<br>
+                                    <input type="checkbox" name="TAMANIOASJKDNQW" value="ON" /> Queen Size<br>
+                                    <input type="checkbox" name="TAMANIOASJKDNQW" value="ON" /> King Size<br>
+                                    <br>
+                                    <div class="inputTitle">
+                                        13.¿De qué material son las camas que utiliza?
+                                    </div>
+                                    <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
+                                           value="HierroPrincipalmente" />Hierro
+                                    principalente<br>
+                                    <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
+                                           value="MaderaPrincipalmente" />Madera
+                                    principalente<br>
+                                    <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
+                                           value="CombinacionDeHierroYMadera" />Combinación
+                                    de ambas<br>
+                                    <input type="radio" name="MaterialCamasQueUtilizaEnSuHogar"
+                                           value="NingunaDeLasAnteriores" />Ninguna
+                                    de
+                                    las
+                                    anteriores<br>
+                                    <div style="margin: 12%;"></div>
+                                </div>
+                            </div>
+
+                            14.¿Qué características posee la cama que más le gusta y hace uso usted en su hogar?
+
+                            <div class="seccion_caracteristicas_cama">
+                                Caracteristicas cama/s en su hogar
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        Tipo de cama
+                                        <select name="tipoCama">
+                                            <option></option>
+                                            <option>Individual</option>
+                                            <option>Matrimonial</option>
+                                            <option>Queen Size</option>
+                                            <option>King Size</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-12 col-sm-12 col-md-12 col-lg-3 columna_dos_de_seccion_caracteristicas_cama">
+                                        Cantidad de camas
+                                        <input type="text" />
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        ¿Qué tamaño posee? (Indicar medidas)
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        Posee respaldar
+                                        <select name="Posee respaldar">
+                                            <option></option>
+                                            <option>Sí</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-12 col-sm-12 col-md-12 col-lg-3 columna_dos_de_seccion_caracteristicas_cama">
+                                        ¿Cómo cuánto pesa?
+                                        <input type="text" name="ComoCuantoPesa" value="" />
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        ¿Qué altura posee? Centimetros
+                                        <input type="text" name="QueAlturaPosee" value="" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        ¿Empacada?
+                                        <select name="Empacada">
+                                            <option></option>
+                                            <option>Sí</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-12 col-sm-12 col-md-12 col-lg-3 columna_dos_de_seccion_caracteristicas_cama">
+                                        ¿Traía colchón?
+                                        <select name="traiaColchon">
+                                            <option></option>
+                                            <option>Sí</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                        Precio en colones
+                                        <input type="text" name="precioColones" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    
