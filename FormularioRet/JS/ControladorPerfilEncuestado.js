@@ -35,6 +35,7 @@ function mostrar_modulo(id_div) {
     if (id_div === MODULO_CARACTERIZACION_CAMAS_NEGOCIO_ID) {
         CARGA_AJAX(id_div, RUTA_CONTENIDO_DIV_NEGOCIO);
         contador_negocio = 1;
+        console.log(contador_negocio);
     } else {
         //Si no es del negocio, es del hogar.
         CARGA_AJAX(id_div, RUTA_CONTENIDO_DIV_HOGAR);
