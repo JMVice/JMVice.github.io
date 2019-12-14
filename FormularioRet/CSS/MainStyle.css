@@ -50,6 +50,9 @@ footer{
         margin-top: 7%;
         margin-bottom: 7%;
     }
+    textarea{
+        width: 335px;
+    }
 }
 
 @media only screen and (min-width: 991px) {
